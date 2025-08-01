@@ -227,8 +227,7 @@ You will see the admin password in the log.
 :::
 
 ```
-INFO[2025-06-30 12:17:09] username: admin
-INFO[2025-06-30 12:17:09] password: xYZabHGf
+Successfully created the admin user and the initial password is: xYZabHGf
 ```
 
 ### Not first run { lang="en" }
