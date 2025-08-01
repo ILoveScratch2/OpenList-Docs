@@ -110,7 +110,6 @@ declare module 'vue-router/auto-routes' {
     '/guide/drivers/onedrive_app': RouteRecordInfo<'/guide/drivers/onedrive_app', '/guide/drivers/onedrive_app', Record<never, never>, Record<never, never>>,
     '/guide/drivers/pikpak': RouteRecordInfo<'/guide/drivers/pikpak', '/guide/drivers/pikpak', Record<never, never>, Record<never, never>>,
     '/guide/drivers/quark': RouteRecordInfo<'/guide/drivers/quark', '/guide/drivers/quark', Record<never, never>, Record<never, never>>,
-    '/guide/drivers/quqi': RouteRecordInfo<'/guide/drivers/quqi', '/guide/drivers/quqi', Record<never, never>, Record<never, never>>,
     '/guide/drivers/s3': RouteRecordInfo<'/guide/drivers/s3', '/guide/drivers/s3', Record<never, never>, Record<never, never>>,
     '/guide/drivers/seafile': RouteRecordInfo<'/guide/drivers/seafile', '/guide/drivers/seafile', Record<never, never>, Record<never, never>>,
     '/guide/drivers/sftp': RouteRecordInfo<'/guide/drivers/sftp', '/guide/drivers/sftp', Record<never, never>, Record<never, never>>,
