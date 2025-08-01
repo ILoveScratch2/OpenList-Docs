@@ -216,7 +216,7 @@ ERRO[2022-11-20 12:05:19] error [unaligned 64-bit atomic operation] while run ta
 ### 首次运行 { lang="zh-CN" }
 
 ```bash
-docker log openlist
+docker logs openlist
 ```
 
 ::: en
