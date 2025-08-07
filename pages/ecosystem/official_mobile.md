@@ -146,7 +146,6 @@ iOS support is currently experimental and still in development.
 
 :::zh-CN
 
-:::warning
 iOS 支持目前处于实验阶段，仍在开发中。
 
 :::
