@@ -41,6 +41,17 @@ A cross-platform GUI management interface integrating OpenList and rclone, offer
 
 ---
 
+### [OpenList Mobile ↗](./ecosystem/official_mobile)
+
+:::en
+A mobile file server application based on OpenList, built with Flutter framework. Turn your phone into a file server.
+:::
+:::zh-CN
+基于OpenList的移动端文件服务器应用，使用Flutter框架开发。将您的手机变成文件服务器。
+:::
+
+---
+
 ### [OpenList APIPages ↗](./ecosystem/official_APIpage)
 
 :::en
