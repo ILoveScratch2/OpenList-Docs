@@ -20,7 +20,7 @@ top: 130
 **The left side** is the source Network Disk、**The top side** is the target Network Disk
 :::
 ::: en
-| | Aliyun | 115 | Baidu^(5)^ | 189 | Xunlei | PikPak | GoogleDrive | OndDrive | localhost |
+| | Aliyun | 115 | Baidu^(5)^ | 189 | Xunlei | PikPak | Google Drive | OneDrive | localhost |
 | :---------: | :----------------: | :----------------: | :----------------: | :----------------: | :-------------: | :----------------: | :-------------: | :-------------: | :-------------: |
 | localhost | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | :x: | :white_check_mark: | :x: | :x: | :no_entry_sign: |
 | Aliyun | :white_check_mark: | :white_check_mark: | :question: | :x: | :x: | :x: | :x: | :x: | :no_entry_sign: |
@@ -29,13 +29,13 @@ top: 130
 | 189 | :x: | :x: | :white_check_mark: | :white_check_mark: | :x: | :x: | :x: | :x: | :no_entry_sign: |
 | Xunlei | :x: | :x: | :question: | :x: | :x: | :white_check_mark: | :x: | :x: | :no_entry_sign: |
 | PikPak | :x: | :x: | :question: | :x: | :x: | :white_check_mark: | :x: | :x: | :no_entry_sign: |
-| GoogleDrive | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | :x: | :x: | :x: | :no_entry_sign: |
+| Google Drive | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | :x: | :x: | :x: | :no_entry_sign: |
 | OneDrive | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :no_entry_sign: |
 
 1. The **Aliyun** mentioned here refers to [**aliyundriveOpen**](../../guide/drivers/aliyundrive_open.md)
 2. **OneDrive** has not been tested because there is no account. If the test is valid and there are no problems, feedback is welcome.
 3. **Aliyun** and **189**: Both need to turn on the Rapid upload option in the storage configuration, otherwise Rapid upload cannot be performed
-4. **GoogleDrive** files can be transferred to **189** in seconds and **189** can transfer files to **189** in seconds. There may be some problems and are not very stable. Need to Pay attention to observation
+4. **Google Drive** files can be transferred to **189** in seconds and **189** can transfer files to **189** in seconds. There may be some problems and are not very stable. Need to pay attention to observation
 5. **Baidu cloud Disk** can only be stored from local storage Rapid Upload to the network disk. If you use cross -storage to Copy Rapid Upload, you can only download the file first and then perform RAPID Upload.
 
 :::
