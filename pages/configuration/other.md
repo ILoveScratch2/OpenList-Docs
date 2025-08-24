@@ -43,7 +43,7 @@ Allow the use of offline download tools such as 115/PikPak/Thunder in any storag
 
 - Files will be downloaded directly to the destination dir if using the tool in 115/PikPak/Thunder storage.
 - Otherwise, files will be downloaded to a user-configured temp dir, and then transfered to the destination dir.
-  - For example, on the front-end page of the `GoogleDrive` storage drive, when the `Pikpak offline-download` function is invoked, the file will first be downloaded to the Pikpak temporary folder directory set in the backend. Once the Pikpak offline download is complete, the file will be automatically transferred from Pikpak to `GoogleDrive`.
+  - For example, on the front-end page of the `Google Drive` storage drive, when the `Pikpak offline-download` function is invoked, the file will first be downloaded to the Pikpak temporary folder directory set in the backend. Once the Pikpak offline download is complete, the file will be automatically transferred from Pikpak to `Google Drive`.
 
 :::
 ::: zh-CN
@@ -53,7 +53,7 @@ Allow the use of offline download tools such as 115/PikPak/Thunder in any storag
 
 - 如果在 115/PikPak/迅雷 存储中使用离线下载，文件会被直接下载到目标目录。
 - 否则，文件会下载至用户配置的临时目录中，然后转移至目标目录。
-  - 例如，在 `GoogleDrive` 存储驱动的前端页面中，调用 `Pikpak offline-download` 功能时，文件会先下载到后台设置的 Pikpak 临时文件夹目录。待 Pikpak 完成离线下载后，文件会自动从 Pikpak 转移到 `GoogleDrive`。
+  - 例如，在 `Google Drive` 存储驱动的前端页面中，调用 `Pikpak offline-download` 功能时，文件会先下载到后台设置的 Pikpak 临时文件夹目录。待 Pikpak 完成离线下载后，文件会自动从 Pikpak 转移到 `Google Drive`。
 
 :::
 
