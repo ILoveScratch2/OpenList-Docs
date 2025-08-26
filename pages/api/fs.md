@@ -41,14 +41,14 @@ When the `path` parameter of the following API starts with `/@s/<share_id>`, it 
 
 :::
 
-## POST 新建文件夹 { lang="en" }
+## POST Create Folder { lang="en" }
 
 ## POST 新建文件夹 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/mkdir
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -70,34 +70,34 @@ POST /api/fs/mkdir
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 新目录路径 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | New directory path | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 新目录路径 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | 新目录路径 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -122,12 +122,12 @@ POST /api/fs/mkdir
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -137,7 +137,7 @@ POST /api/fs/mkdir
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -158,14 +158,14 @@ POST /api/fs/mkdir
 | » data | null | true | none | | none |
 :::
 
-## POST 重命名文件 { lang="en" }
+## POST Rename File { lang="en" }
 
 ## POST 重命名文件 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/rename
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -189,36 +189,36 @@ POST /api/fs/rename
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------ | ---- | --------------------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » name | body | string | 是 | 目标文件名，不支持'/' | none |
-| » path | body | string | 是 | 源文件名 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » name | body | string | Yes | 目标文件名，不支持'/' | none |
+| » path | body | string | Yes | 源文件名 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | --------------------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » name | body | string | 是 | 目标文件名，不支持'/' | none |
-| » path | body | string | 是 | 源文件名 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » name | body | string | Yes | 目标文件名，不支持'/' | none |
+| » path | body | string | Yes | 源文件名 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -243,12 +243,12 @@ POST /api/fs/rename
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -258,7 +258,7 @@ POST /api/fs/rename
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -286,7 +286,7 @@ POST /api/fs/rename
 ::: en
 PUT /api/fs/form
 
-> Body 请求参数
+> Body Request Parameters
 
 ```yaml
 file: []
@@ -304,40 +304,40 @@ file: []
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | -------------- | ------ | -------------- | ---- | ------ | -------------------------- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 是 | | 需要是multipart/form-data; |
-| Content-Length | header | string | 是 | | 文件大小 |
-| File-Path | header | string | 是 | | 经过URL编码的完整文件路径 |
-| As-Task | header | string | 否 | | 是否添加为任务 |
-| body | body | object | 否 | | none |
-| » file | body | string(binary) | 是 | | 文件 |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | Yes | | 需要是multipart/form-data; |
+| Content-Length | header | string | Yes | | 文件大小 |
+| File-Path | header | string | Yes | | 经过URL编码的完整文件路径 |
+| As-Task | header | string | No | | 是否添加为任务 |
+| body | body | object | No | | none |
+| » file | body | string(binary) | Yes | | 文件 |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | -------------- | ------ | -------------- | ---- | ------ | -------------------------- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 是 | | 需要是multipart/form-data; |
-| Content-Length | header | string | 是 | | 文件大小 |
-| File-Path | header | string | 是 | | 经过URL编码的完整文件路径 |
-| As-Task | header | string | 否 | | 是否添加为任务 |
-| body | body | object | 否 | | none |
-| » file | body | string(binary) | 是 | | 文件 |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | Yes | | 需要是multipart/form-data; |
+| Content-Length | header | string | Yes | | 文件大小 |
+| File-Path | header | string | Yes | | 经过URL编码的完整文件路径 |
+| As-Task | header | string | No | | 是否添加为任务 |
+| body | body | object | No | | none |
+| » file | body | string(binary) | Yes | | 文件 |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -380,12 +380,12 @@ file: []
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -395,7 +395,7 @@ file: []
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -430,14 +430,14 @@ file: []
 | »»» error | string | true | none | | none |
 :::
 
-## POST 列出文件目录 { lang="en" }
+## POST List File Directory { lang="en" }
 
 ## POST 列出文件目录 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/list
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -467,40 +467,40 @@ POST /api/fs/list
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------- | ---- | ------------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 否 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » page | body | integer | 否 | 页数 | none |
-| » per_page | body | integer | 否 | 每页数目 | none |
-| » refresh | body | boolean | 否 | 是否强制刷新 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » path | body | string | No | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » page | body | integer | No | 页数 | none |
+| » per_page | body | integer | No | 每页数目 | none |
+| » refresh | body | boolean | No | 是否强制刷新 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | ------------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 否 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » page | body | integer | 否 | 页数 | none |
-| » per_page | body | integer | 否 | 每页数目 | none |
-| » refresh | body | boolean | 否 | 是否强制刷新 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » path | body | string | No | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » page | body | integer | No | 页数 | none |
+| » per_page | body | integer | No | 每页数目 | none |
+| » refresh | body | boolean | No | 是否强制刷新 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -565,12 +565,12 @@ POST /api/fs/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -580,7 +580,7 @@ POST /api/fs/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -633,14 +633,14 @@ POST /api/fs/list
 | »» header | string | true | none | | none |
 :::
 
-## POST 获取某个文件/目录信息 { lang="en" }
+## POST Get File/Directory Info { lang="en" }
 
 ## POST 获取某个文件/目录信息 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/get
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -670,40 +670,40 @@ POST /api/fs/get
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------- | ---- | --------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 是 | 密码 | none |
-| » page | body | integer | 否 | | none |
-| » per_page | body | integer | 否 | | none |
-| » refresh | body | boolean | 否 | 强制 刷新 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | Yes | 密码 | none |
+| » page | body | integer | No | | none |
+| » per_page | body | integer | No | | none |
+| » refresh | body | boolean | No | 强制 刷新 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | --------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 是 | 密码 | none |
-| » page | body | integer | 否 | | none |
-| » per_page | body | integer | 否 | | none |
-| » refresh | body | boolean | 否 | 强制 刷新 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | Yes | 密码 | none |
+| » page | body | integer | No | | none |
+| » per_page | body | integer | No | | none |
+| » refresh | body | boolean | No | 强制 刷新 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -760,12 +760,12 @@ POST /api/fs/get
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -775,7 +775,7 @@ POST /api/fs/get
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -826,14 +826,14 @@ POST /api/fs/get
 | »» header | string | true | none | | none |
 :::
 
-## POST 搜索文件或文件夹 { lang="en" }
+## POST Search Files or Folders { lang="en" }
 
 ## POST 搜索文件或文件夹 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/search
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -865,42 +865,42 @@ POST /api/fs/search
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------- | ---- | -------- | ---------------------- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » parent | body | string | 是 | 搜索目录 | none |
-| » keywords | body | string | 是 | 关键词 | none |
-| » scope | body | integer | 是 | 搜索类型 | 0-全部 1-文件夹 2-文件 |
-| » page | body | integer | 是 | 页数 | none |
-| » per_page | body | integer | 是 | 每页数目 | none |
-| » password | body | string | 是 | 密码 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » parent | body | string | Yes | 搜索目录 | none |
+| » keywords | body | string | Yes | 关键词 | none |
+| » scope | body | integer | Yes | 搜索类型 | 0-全部 1-文件夹 2-文件 |
+| » page | body | integer | Yes | 页数 | none |
+| » per_page | body | integer | Yes | 每页数目 | none |
+| » password | body | string | Yes | 密码 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------- | ---------------------- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » parent | body | string | 是 | 搜索目录 | none |
-| » keywords | body | string | 是 | 关键词 | none |
-| » scope | body | integer | 是 | 搜索类型 | 0-全部 1-文件夹 2-文件 |
-| » page | body | integer | 是 | 页数 | none |
-| » per_page | body | integer | 是 | 每页数目 | none |
-| » password | body | string | 是 | 密码 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » parent | body | string | Yes | 搜索目录 | none |
+| » keywords | body | string | Yes | 关键词 | none |
+| » scope | body | integer | Yes | 搜索类型 | 0-全部 1-文件夹 2-文件 |
+| » page | body | integer | Yes | 页数 | none |
+| » per_page | body | integer | Yes | 每页数目 | none |
+| » password | body | string | Yes | 密码 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -947,12 +947,12 @@ POST /api/fs/search
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -962,7 +962,7 @@ POST /api/fs/search
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -997,14 +997,14 @@ POST /api/fs/search
 | »» total | integer | true | none | 总数 | none |
 :::
 
-## POST 获取目录 { lang="en" }
+## POST Get Directory { lang="en" }
 
 ## POST 获取目录 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/dirs
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1030,36 +1030,36 @@ POST /api/fs/dirs
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------- | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 否 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » force_root | body | boolean | 否 | | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » path | body | string | No | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » force_root | body | boolean | No | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 否 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » force_root | body | boolean | 否 | | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » path | body | string | No | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » force_root | body | boolean | No | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1094,12 +1094,12 @@ POST /api/fs/dirs
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1109,7 +1109,7 @@ POST /api/fs/dirs
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1134,14 +1134,14 @@ POST /api/fs/dirs
 | »» modified | string | true | none | 修改时间 | none |
 :::
 
-## POST 批量重命名 { lang="en" }
+## POST Batch Rename { lang="en" }
 
 ## POST 批量重命名 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/batch_rename
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1175,40 +1175,40 @@ POST /api/fs/batch_rename
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ---------------- | ------ | -------- | ---- | -------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源目录 | none |
-| » rename_objects | body | [object] | 是 | | none |
-| »» src_name | body | string | 否 | 原文件名 | none |
-| »» new_name | body | string | 否 | 新文件名 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源目录 | none |
+| » rename_objects | body | [object] | Yes | | none |
+| »» src_name | body | string | No | 原文件名 | none |
+| »» new_name | body | string | No | 新文件名 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ---------------- | ------ | -------- | ---- | -------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源目录 | none |
-| » rename_objects | body | [object] | 是 | | none |
-| »» src_name | body | string | 否 | 原文件名 | none |
-| »» new_name | body | string | 否 | 新文件名 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源目录 | none |
+| » rename_objects | body | [object] | Yes | | none |
+| »» src_name | body | string | No | 原文件名 | none |
+| »» new_name | body | string | No | 新文件名 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1233,12 +1233,12 @@ POST /api/fs/batch_rename
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1248,7 +1248,7 @@ POST /api/fs/batch_rename
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1269,14 +1269,14 @@ POST /api/fs/batch_rename
 | » data | null | true | none | | none |
 :::
 
-## POST 正则重命名 { lang="en" }
+## POST Regex Rename { lang="en" }
 
 ## POST 正则重命名 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/regex_rename
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1310,38 +1310,38 @@ POST /api/fs/regex_rename
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ---------------- | ------ | ------ | ---- | -------------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源目录 | none |
-| » src_name_regex | body | string | 是 | 源文件匹配正则 | none |
-| » new_name_regex | body | string | 是 | 新文件名正则 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源目录 | none |
+| » src_name_regex | body | string | Yes | 源文件匹配正则 | none |
+| » new_name_regex | body | string | Yes | 新文件名正则 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ---------------- | ------ | ------ | ---- | -------------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源目录 | none |
-| » src_name_regex | body | string | 是 | 源文件匹配正则 | none |
-| » new_name_regex | body | string | 是 | 新文件名正则 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源目录 | none |
+| » src_name_regex | body | string | Yes | 源文件匹配正则 | none |
+| » new_name_regex | body | string | Yes | 新文件名正则 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1366,12 +1366,12 @@ POST /api/fs/regex_rename
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1381,7 +1381,7 @@ POST /api/fs/regex_rename
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1402,14 +1402,14 @@ POST /api/fs/regex_rename
 | » data | null | true | none | | none |
 :::
 
-## POST 移动文件 { lang="en" }
+## POST Move File { lang="en" }
 
 ## POST 移动文件 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/move
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1435,36 +1435,36 @@ POST /api/fs/move
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | -------- | ---- | ---------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
-| » names | body | [string] | 是 | 文件名 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
+| » names | body | [string] | Yes | 文件名 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | -------- | ---- | ---------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
-| » names | body | [string] | 是 | 文件名 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
+| » names | body | [string] | Yes | 文件名 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1489,12 +1489,12 @@ POST /api/fs/move
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1504,7 +1504,7 @@ POST /api/fs/move
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1525,14 +1525,14 @@ POST /api/fs/move
 | » data | null | true | none | | none |
 :::
 
-## POST 聚合移动 { lang="en" }
+## POST Aggregate Move { lang="en" }
 
 ## POST 聚合移动 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/recursive_move
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1556,34 +1556,34 @@ POST /api/fs/recursive_move
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------ | ---- | ---------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1608,12 +1608,12 @@ POST /api/fs/recursive_move
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1623,7 +1623,7 @@ POST /api/fs/recursive_move
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1644,14 +1644,14 @@ POST /api/fs/recursive_move
 | » data | null | true | none | | none |
 :::
 
-## POST 复制文件 { lang="en" }
+## POST Copy File { lang="en" }
 
 ## POST 复制文件 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/copy
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1677,36 +1677,36 @@ POST /api/fs/copy
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | -------- | ---- | ---------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
-| » names | body | [string] | 是 | 文件名 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
+| » names | body | [string] | Yes | 文件名 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | -------- | ---- | ---------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
-| » names | body | [string] | 是 | 文件名 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
+| » names | body | [string] | Yes | 文件名 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1731,12 +1731,12 @@ POST /api/fs/copy
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1746,7 +1746,7 @@ POST /api/fs/copy
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1767,14 +1767,14 @@ POST /api/fs/copy
 | » data | null | true | none | | none |
 :::
 
-## POST 删除文件或文件夹 { lang="en" }
+## POST Delete Files or Folders { lang="en" }
 
 ## POST 删除文件或文件夹 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/remove
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1798,34 +1798,34 @@ POST /api/fs/remove
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | -------- | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » names | body | [string] | 是 | 文件名 | none |
-| » dir | body | string | 是 | 目录 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » names | body | [string] | Yes | 文件名 | none |
+| » dir | body | string | Yes | 目录 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | -------- | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » names | body | [string] | 是 | 文件名 | none |
-| » dir | body | string | 是 | 目录 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » names | body | [string] | Yes | 文件名 | none |
+| » dir | body | string | Yes | 目录 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1850,12 +1850,12 @@ POST /api/fs/remove
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1865,7 +1865,7 @@ POST /api/fs/remove
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1886,14 +1886,14 @@ POST /api/fs/remove
 | » data | null | true | none | | none |
 :::
 
-## POST 删除空文件夹 { lang="en" }
+## POST Delete Empty Folders { lang="en" }
 
 ## POST 删除空文件夹 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/remove_empty_directory
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -1915,32 +1915,32 @@ POST /api/fs/remove_empty_directory
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 目录 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 目录 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 目录 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 目录 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1965,12 +1965,12 @@ POST /api/fs/remove_empty_directory
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1980,7 +1980,7 @@ POST /api/fs/remove_empty_directory
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -2008,7 +2008,7 @@ POST /api/fs/remove_empty_directory
 ::: en
 PUT /api/fs/put
 
-> Body 请求参数
+> Body Request Parameters
 
 ```yaml
 string
@@ -2026,38 +2026,38 @@ string
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | -------------- | ------ | -------------- | ---- | ------ | ----------------------------- |
-| Authorization | header | string | 是 | | none |
-| File-Path | header | string | 是 | | 经过URL编码的完整目标文件路径 |
-| As-Task | header | string | 否 | | 是否添加为任务 |
-| Content-Type | header | string | 是 | | none |
-| Content-Length | header | string | 是 | | none |
-| body | body | string(binary) | 否 | | none |
+| Authorization | header | string | Yes | | none |
+| File-Path | header | string | Yes | | 经过URL编码的完整目标文件路径 |
+| As-Task | header | string | No | | 是否添加为任务 |
+| Content-Type | header | string | Yes | | none |
+| Content-Length | header | string | Yes | | none |
+| body | body | string(binary) | No | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | -------------- | ------ | -------------- | ---- | ------ | ----------------------------- |
-| Authorization | header | string | 是 | | none |
-| File-Path | header | string | 是 | | 经过URL编码的完整目标文件路径 |
-| As-Task | header | string | 否 | | 是否添加为任务 |
-| Content-Type | header | string | 是 | | none |
-| Content-Length | header | string | 是 | | none |
-| body | body | string(binary) | 否 | | none |
+| Authorization | header | string | Yes | | none |
+| File-Path | header | string | Yes | | 经过URL编码的完整目标文件路径 |
+| As-Task | header | string | No | | 是否添加为任务 |
+| Content-Type | header | string | Yes | | none |
+| Content-Length | header | string | Yes | | none |
+| body | body | string(binary) | No | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -2100,12 +2100,12 @@ string
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -2115,7 +2115,7 @@ string
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -2150,14 +2150,14 @@ string
 | »»» error | string | true | none | | none |
 :::
 
-## POST 添加离线下载 { lang="en" }
+## POST Add Offline Download { lang="en" }
 
 ## POST 添加离线下载 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/add_offline_download
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -2185,38 +2185,38 @@ POST /api/fs/add_offline_download
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | --------------- | ------ | -------- | ---- | -------- | --------------------------------------------------------------------------------------- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » urls | body | [string] | 是 | url | none |
-| » path | body | string | 是 | 目标路径 | none |
-| » tool | body | string | 是 | 工具 | 可选`aria2`,`SimpleHttp`和`qBittorrent` |
-| » delete_policy | body | string | 是 | 删除策略 | 可选`delete_on_upload_succeed`,`delete_on_upload_failed`,`delete_never`,`delete_always` |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » urls | body | [string] | Yes | url | none |
+| » path | body | string | Yes | 目标路径 | none |
+| » tool | body | string | Yes | 工具 | 可选`aria2`,`SimpleHttp`和`qBittorrent` |
+| » delete_policy | body | string | Yes | 删除策略 | 可选`delete_on_upload_succeed`,`delete_on_upload_failed`,`delete_never`,`delete_always` |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | --------------- | ------ | -------- | ---- | -------- | --------------------------------------------------------------------------------------- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » urls | body | [string] | 是 | url | none |
-| » path | body | string | 是 | 目标路径 | none |
-| » tool | body | string | 是 | 工具 | 可选`aria2`,`SimpleHttp`和`qBittorrent` |
-| » delete_policy | body | string | 是 | 删除策略 | 可选`delete_on_upload_succeed`,`delete_on_upload_failed`,`delete_never`,`delete_always` |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » urls | body | [string] | Yes | url | none |
+| » path | body | string | Yes | 目标路径 | none |
+| » tool | body | string | Yes | 工具 | 可选`aria2`,`SimpleHttp`和`qBittorrent` |
+| » delete_policy | body | string | Yes | 删除策略 | 可选`delete_on_upload_succeed`,`delete_on_upload_failed`,`delete_never`,`delete_always` |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -2263,12 +2263,12 @@ POST /api/fs/add_offline_download
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -2278,7 +2278,7 @@ POST /api/fs/add_offline_download
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -2313,14 +2313,14 @@ POST /api/fs/add_offline_download
 | »»» error | string | false | none | | none |
 :::
 
-## POST 获取压缩文件元信息 { lang="en" }
+## POST Get Archive File Meta Info { lang="en" }
 
 ## POST 获取压缩文件元信息 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/archive/meta
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -2348,40 +2348,40 @@ POST /api/fs/archive/meta
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » refresh | body | string | 否 | 是否强制刷新 | none |
-| » archive_pass | body | string | 否 | 压缩文件密码 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » refresh | body | string | No | 是否强制刷新 | none |
+| » archive_pass | body | string | No | 压缩文件密码 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » refresh | body | string | 否 | 是否强制刷新 | none |
-| » archive_pass | body | string | 否 | 压缩文件密码 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » refresh | body | string | No | 是否强制刷新 | none |
+| » archive_pass | body | string | No | 压缩文件密码 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -2456,12 +2456,12 @@ POST /api/fs/archive/meta
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -2471,7 +2471,7 @@ POST /api/fs/archive/meta
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -2532,14 +2532,14 @@ POST /api/fs/archive/meta
 | »»» children | [object] \| null | true | none | 子项 | 与`content`类型相同，为[]表示该文件夹为空，为`null`表示该项为文件或未展开，未展开的文件夹可用`/api/fs/archive/list`继续展开。 |
 :::
 
-## POST 列出压缩文件目录 { lang="en" }
+## POST List Archive File Directory { lang="en" }
 
 ## POST 列出压缩文件目录 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/archive/list
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -2573,46 +2573,46 @@ POST /api/fs/archive/list
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » page | body | integer | 否 | 页数 | none |
-| » per_page | body | integer | 否 | 每页数目 | none |
-| » refresh | body | string | 否 | 是否强制刷新 | none |
-| » archive_pass | body | string | 否 | 压缩文件密码 | none |
-| » inner_path | body | string | 是 | 压缩文件内部路径 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » page | body | integer | No | 页数 | none |
+| » per_page | body | integer | No | 每页数目 | none |
+| » refresh | body | string | No | 是否强制刷新 | none |
+| » archive_pass | body | string | No | 压缩文件密码 | none |
+| » inner_path | body | string | Yes | 压缩文件内部路径 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 否 | 密码 | none |
-| » page | body | integer | 否 | 页数 | none |
-| » per_page | body | integer | 否 | 每页数目 | none |
-| » refresh | body | string | 否 | 是否强制刷新 | none |
-| » archive_pass | body | string | 否 | 压缩文件密码 | none |
-| » inner_path | body | string | 是 | 压缩文件内部路径 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | No | 密码 | none |
+| » page | body | integer | No | 页数 | none |
+| » per_page | body | integer | No | 每页数目 | none |
+| » refresh | body | string | No | 是否强制刷新 | none |
+| » archive_pass | body | string | No | 压缩文件密码 | none |
+| » inner_path | body | string | Yes | 压缩文件内部路径 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -2669,12 +2669,12 @@ POST /api/fs/archive/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -2684,7 +2684,7 @@ POST /api/fs/archive/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -2729,14 +2729,14 @@ POST /api/fs/archive/list
 | »» total | integer | true | none | 总数 | none |
 :::
 
-## POST 解压压缩文件 { lang="en" }
+## POST Extract Archive File { lang="en" }
 
 ## POST 解压压缩文件 { lang="zh-CN" }
 
 ::: en
 POST /api/fs/archive/decompress
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -2770,46 +2770,46 @@ POST /api/fs/archive/decompress
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
+| Name | Position | Type | Required | English Name | Description |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
-| » name | body | [string] | 是 | 文件名 | none |
-| » archive_pass | body | string | 否 | 压缩文件密码 | none |
-| » inner_path | body | string | 是 | 压缩文件内部路径 | none |
-| » cache_full | body | boolean | 否 | 解压前是否先将压缩文件下载到本地 | none |
-| » put_into_new_dir | body | boolean | 否 | 是否解压到新建同名文件夹 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
+| » name | body | [string] | Yes | 文件名 | none |
+| » archive_pass | body | string | No | 压缩文件密码 | none |
+| » inner_path | body | string | Yes | 压缩文件内部路径 | none |
+| » cache_full | body | boolean | No | 解压前是否先将压缩文件下载到本地 | none |
+| » put_into_new_dir | body | boolean | No | 是否解压到新建同名文件夹 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » src_dir | body | string | 是 | 源文件夹 | none |
-| » dst_dir | body | string | 是 | 目标文件夹 | none |
-| » name | body | [string] | 是 | 文件名 | none |
-| » archive_pass | body | string | 否 | 压缩文件密码 | none |
-| » inner_path | body | string | 是 | 压缩文件内部路径 | none |
-| » cache_full | body | boolean | 否 | 解压前是否先将压缩文件下载到本地 | none |
-| » put_into_new_dir | body | boolean | 否 | 是否解压到新建同名文件夹 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » src_dir | body | string | Yes | 源文件夹 | none |
+| » dst_dir | body | string | Yes | 目标文件夹 | none |
+| » name | body | [string] | Yes | 文件名 | none |
+| » archive_pass | body | string | No | 压缩文件密码 | none |
+| » inner_path | body | string | Yes | 压缩文件内部路径 | none |
+| » cache_full | body | boolean | No | 解压前是否先将压缩文件下载到本地 | none |
+| » put_into_new_dir | body | boolean | No | 是否解压到新建同名文件夹 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -2834,12 +2834,12 @@ POST /api/fs/archive/decompress
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -2849,7 +2849,7 @@ POST /api/fs/archive/decompress
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 

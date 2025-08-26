@@ -20,7 +20,7 @@ sticky: true
 star: true
 ---
 
-## GET 列出所有用户 { lang="en" }
+## GET List All Users { lang="en" }
 
 ## GET 列出所有用户 { lang="zh-CN" }
 
@@ -31,28 +31,28 @@ GET /api/admin/user/list
 GET /api/admin/user/list
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -145,12 +145,12 @@ GET /api/admin/user/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -160,7 +160,7 @@ GET /api/admin/user/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -212,30 +212,30 @@ GET /api/admin/user/get
 GET /api/admin/user/get
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ---- |
-| id | query | string | 是 | none |
-| Authorization | header | string | 是 | none |
+| id | query | string | Yes | none |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| id | query | string | 是 | none |
-| Authorization | header | string | 是 | none |
+| id | query | string | Yes | none |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -278,12 +278,12 @@ GET /api/admin/user/get
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -293,7 +293,7 @@ GET /api/admin/user/get
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -330,14 +330,14 @@ GET /api/admin/user/get
 | »» sso_id | string | true | none | sso id | none |
 :::
 
-## POST 新建用户 { lang="en" }
+## POST Create User { lang="en" }
 
 ## POST 新建用户 { lang="zh-CN" }
 
 ::: en
 POST /api/admin/user/create
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -373,46 +373,46 @@ POST /api/admin/user/create
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 否 | id | none |
-| » username | body | string | 是 | 用户名 | none |
-| » password | body | string | 否 | 密码 | none |
-| » base_path | body | string | 否 | 基本路径 | none |
-| » role | body | integer | 否 | 角色 | none |
-| » permission | body | integer | 否 | 权限 | none |
-| » disabled | body | boolean | 否 | 是否禁用 | none |
-| » sso_id | body | string | 否 | sso id | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | No | id | none |
+| » username | body | string | Yes | 用户名 | none |
+| » password | body | string | No | 密码 | none |
+| » base_path | body | string | No | 基本路径 | none |
+| » role | body | integer | No | 角色 | none |
+| » permission | body | integer | No | 权限 | none |
+| » disabled | body | boolean | No | 是否禁用 | none |
+| » sso_id | body | string | No | sso id | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 否 | id | none |
-| » username | body | string | 是 | 用户名 | none |
-| » password | body | string | 否 | 密码 | none |
-| » base_path | body | string | 否 | 基本路径 | none |
-| » role | body | integer | 否 | 角色 | none |
-| » permission | body | integer | 否 | 权限 | none |
-| » disabled | body | boolean | 否 | 是否禁用 | none |
-| » sso_id | body | string | 否 | sso id | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | No | id | none |
+| » username | body | string | Yes | 用户名 | none |
+| » password | body | string | No | 密码 | none |
+| » base_path | body | string | No | 基本路径 | none |
+| » role | body | integer | No | 角色 | none |
+| » permission | body | integer | No | 权限 | none |
+| » disabled | body | boolean | No | 是否禁用 | none |
+| » sso_id | body | string | No | sso id | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -437,12 +437,12 @@ POST /api/admin/user/create
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -452,7 +452,7 @@ POST /api/admin/user/create
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -473,14 +473,14 @@ POST /api/admin/user/create
 | » data | null | true | none | | none |
 :::
 
-## POST 更新用户信息 { lang="en" }
+## POST Update User Info { lang="en" }
 
 ## POST 更新用户信息 { lang="zh-CN" }
 
 ::: en
 POST /api/admin/user/update
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -516,46 +516,46 @@ POST /api/admin/user/update
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 是 | id | none |
-| » username | body | string | 是 | 用户名 | none |
-| » password | body | string | 否 | 密码 | none |
-| » base_path | body | string | 否 | 基本路径 | none |
-| » role | body | integer | 否 | 角色 | none |
-| » permission | body | integer | 否 | 权限 | none |
-| » disabled | body | boolean | 否 | 是否禁用 | none |
-| » sso_id | body | string | 否 | sso id | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | Yes | id | none |
+| » username | body | string | Yes | 用户名 | none |
+| » password | body | string | No | 密码 | none |
+| » base_path | body | string | No | 基本路径 | none |
+| » role | body | integer | No | 角色 | none |
+| » permission | body | integer | No | 权限 | none |
+| » disabled | body | boolean | No | 是否禁用 | none |
+| » sso_id | body | string | No | sso id | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 是 | id | none |
-| » username | body | string | 是 | 用户名 | none |
-| » password | body | string | 否 | 密码 | none |
-| » base_path | body | string | 否 | 基本路径 | none |
-| » role | body | integer | 否 | 角色 | none |
-| » permission | body | integer | 否 | 权限 | none |
-| » disabled | body | boolean | 否 | 是否禁用 | none |
-| » sso_id | body | string | 否 | sso id | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | Yes | id | none |
+| » username | body | string | Yes | 用户名 | none |
+| » password | body | string | No | 密码 | none |
+| » base_path | body | string | No | 基本路径 | none |
+| » role | body | integer | No | 角色 | none |
+| » permission | body | integer | No | 权限 | none |
+| » disabled | body | boolean | No | 是否禁用 | none |
+| » sso_id | body | string | No | sso id | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -580,12 +580,12 @@ POST /api/admin/user/update
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -595,7 +595,7 @@ POST /api/admin/user/update
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -627,30 +627,30 @@ POST /api/admin/user/cancel_2fa
 POST /api/admin/user/cancel_2fa
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| id | query | string | 是 | | none |
-| Authorization | header | string | 是 | | none |
+| id | query | string | Yes | | none |
+| Authorization | header | string | Yes | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| id | query | string | 是 | | none |
-| Authorization | header | string | 是 | | none |
+| id | query | string | Yes | | none |
+| Authorization | header | string | Yes | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -675,12 +675,12 @@ POST /api/admin/user/cancel_2fa
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -690,7 +690,7 @@ POST /api/admin/user/cancel_2fa
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -711,7 +711,7 @@ POST /api/admin/user/cancel_2fa
 | » data | null | true | none | | none |
 :::
 
-## POST 删除用户 { lang="en" }
+## POST Delete User { lang="en" }
 
 ## POST 删除用户 { lang="zh-CN" }
 
@@ -722,30 +722,30 @@ POST /api/admin/user/delete
 POST /api/admin/user/delete
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| id | query | string | 是 | | none |
-| Authorization | header | string | 否 | | none |
+| id | query | string | Yes | | none |
+| Authorization | header | string | No | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| id | query | string | 是 | | none |
-| Authorization | header | string | 否 | | none |
+| id | query | string | Yes | | none |
+| Authorization | header | string | No | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -770,12 +770,12 @@ POST /api/admin/user/delete
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -785,7 +785,7 @@ POST /api/admin/user/delete
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -817,30 +817,30 @@ POST /api/admin/user/del_cache
 POST /api/admin/user/del_cache
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| username | query | string | 是 | | none |
-| Authorization | header | string | 否 | | none |
+| username | query | string | Yes | | none |
+| Authorization | header | string | No | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| username | query | string | 是 | | none |
-| Authorization | header | string | 否 | | none |
+| username | query | string | Yes | | none |
+| Authorization | header | string | No | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -865,12 +865,12 @@ POST /api/admin/user/del_cache
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -880,7 +880,7 @@ POST /api/admin/user/del_cache
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -912,30 +912,30 @@ GET /api/admin/user/sshkey/list
 GET /api/admin/user/sshkey/list
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| uid | query | string | 是 | 用户id | none |
+| Authorization | header | string | Yes | | none |
+| uid | query | string | Yes | 用户id | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| uid | query | string | 是 | 用户id | none |
+| Authorization | header | string | Yes | | none |
+| uid | query | string | Yes | 用户id | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -996,12 +996,12 @@ GET /api/admin/user/sshkey/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1011,7 +1011,7 @@ GET /api/admin/user/sshkey/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1057,30 +1057,30 @@ POST /api/admin/user/sshkey/delete
 POST /api/admin/user/sshkey/delete
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| id | query | integer | 是 | 公钥主键 | none |
+| Authorization | header | string | Yes | | none |
+| id | query | integer | Yes | 公钥主键 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------- | ---- |
-| Authorization | header | string | 是 | | none |
-| id | query | integer | 是 | 公钥主键 | none |
+| Authorization | header | string | Yes | | none |
+| id | query | integer | Yes | 公钥主键 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {

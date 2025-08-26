@@ -18,15 +18,15 @@ sticky: true
 star: true
 ---
 
-## POST token获取 { lang="en" }
+## POST Get Token { lang="en" }
 
 ## POST token获取 { lang="zh-CN" }
 
 ::: en
 POST /api/auth/login
-获取某个用户的临时JWt token，有效期默认48小时
+Get temporary JWT token for a user, valid for 48 hours by default
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -51,34 +51,34 @@ POST /api/auth/login
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ---------- | ---- | ------ | ---- | ---------- | ---------- |
-| body | body | object | 否 | | none |
-| » username | body | string | 是 | 用户名 | 用户名 |
-| » password | body | string | 是 | 密码 | 密码 |
-| » otp_code | body | string | 否 | 二步验证码 | 二步验证码 |
+| body | body | object | No | | none |
+| » username | body | string | Yes | 用户名 | 用户名 |
+| » password | body | string | Yes | 密码 | 密码 |
+| » otp_code | body | string | No | 二步验证码 | 二步验证码 |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ---------- | ---- | ------ | ---- | ---------- | ---------- |
-| body | body | object | 否 | | none |
-| » username | body | string | 是 | 用户名 | 用户名 |
-| » password | body | string | 是 | 密码 | 密码 |
-| » otp_code | body | string | 否 | 二步验证码 | 二步验证码 |
+| body | body | object | No | | none |
+| » username | body | string | Yes | 用户名 | 用户名 |
+| » password | body | string | Yes | 密码 | 密码 |
+| » otp_code | body | string | No | 二步验证码 | 二步验证码 |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -107,12 +107,12 @@ POST /api/auth/login
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -122,7 +122,7 @@ POST /api/auth/login
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -145,7 +145,7 @@ POST /api/auth/login
 | »» token | string | true | none | | token |
 :::
 
-## POST token获取hash { lang="en" }
+## POST Get Token Hash { lang="en" }
 
 ## POST token获取hash { lang="zh-CN" }
 
@@ -178,34 +178,34 @@ POST /api/auth/login/hash
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ---------- | ---- | ------ | ---- | ---------- | ----------------------------------------------------------------------- |
-| body | body | object | 否 | | none |
-| » username | body | string | 是 | 用户名 | 用户名 |
-| » password | body | string | 是 | 密码 | hash后密码，获取方式为`sha256(密码-https://github.com/alist-org/alist)` |
-| » otp_code | body | string | 否 | 二步验证码 | 二步验证码 |
+| body | body | object | No | | none |
+| » username | body | string | Yes | 用户名 | 用户名 |
+| » password | body | string | Yes | 密码 | hash后密码，获取方式为`sha256(密码-https://github.com/alist-org/alist)` |
+| » otp_code | body | string | No | 二步验证码 | 二步验证码 |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ---------- | ---- | ------ | ---- | ---------- | ----------------------------------------------------------------------- |
-| body | body | object | 否 | | none |
-| » username | body | string | 是 | 用户名 | 用户名 |
-| » password | body | string | 是 | 密码 | hash后密码，获取方式为`sha256(密码-https://github.com/alist-org/alist)` |
-| » otp_code | body | string | 否 | 二步验证码 | 二步验证码 |
+| body | body | object | No | | none |
+| » username | body | string | Yes | 用户名 | 用户名 |
+| » password | body | string | Yes | 密码 | hash后密码，获取方式为`sha256(密码-https://github.com/alist-org/alist)` |
+| » otp_code | body | string | No | 二步验证码 | 二步验证码 |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -234,12 +234,12 @@ POST /api/auth/login/hash
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -249,7 +249,7 @@ POST /api/auth/login/hash
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -272,7 +272,7 @@ POST /api/auth/login/hash
 | »» token | string | true | none | | token |
 :::
 
-## POST 生成2FA密钥 { lang="en" }
+## POST Generate 2FA Secret { lang="en" }
 
 ## POST 生成2FA密钥 { lang="zh-CN" }
 
@@ -283,28 +283,28 @@ POST /api/auth/2fa/generate
 POST /api/auth/2fa/generate
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
+| Authorization | header | string | Yes | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
+| Authorization | header | string | Yes | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -335,12 +335,12 @@ POST /api/auth/2fa/generate
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -350,7 +350,7 @@ POST /api/auth/2fa/generate
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -375,14 +375,14 @@ POST /api/auth/2fa/generate
 | »» secret | string | true | none | 密钥 | none |
 :::
 
-## POST 验证2FA code { lang="en" }
+## POST Verify 2FA Code { lang="en" }
 
 ## POST 验证2FA code { lang="zh-CN" }
 
 ::: en
 POST /api/auth/2fa/verify
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -406,34 +406,34 @@ POST /api/auth/2fa/verify
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | --------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » code | body | string | 是 | 2FA验证码 | none |
-| » secret | body | string | 是 | 2FA密钥 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » code | body | string | Yes | 2FA验证码 | none |
+| » secret | body | string | Yes | 2FA密钥 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | --------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » code | body | string | 是 | 2FA验证码 | none |
-| » secret | body | string | 是 | 2FA密钥 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » code | body | string | Yes | 2FA验证码 | none |
+| » secret | body | string | Yes | 2FA密钥 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -458,12 +458,12 @@ POST /api/auth/2fa/verify
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -473,7 +473,7 @@ POST /api/auth/2fa/verify
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -494,7 +494,7 @@ POST /api/auth/2fa/verify
 | » data | null | true | none | | none |
 :::
 
-## GET 获取当前用户信息 { lang="en" }
+## GET Get Current User Info { lang="en" }
 
 ## GET 获取当前用户信息 { lang="zh-CN" }
 
@@ -505,28 +505,28 @@ GET /api/me
 GET /api/me
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 否 | | none |
+| Authorization | header | string | No | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 否 | | none |
+| Authorization | header | string | No | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -571,12 +571,12 @@ GET /api/me
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -586,7 +586,7 @@ GET /api/me
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -625,7 +625,7 @@ GET /api/me
 | »» otp | boolean | true | none | 是否开启二步验证 | none |
 :::
 
-## GET 列出当前用户 SFTP 公钥 { lang="en" }
+## GET List Current User SFTP Public Keys { lang="en" }
 
 ## GET 列出当前用户 SFTP 公钥 { lang="zh-CN" }
 
@@ -636,28 +636,28 @@ GET /api/me/sshkey/list
 GET /api/me/sshkey/list
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
+| Authorization | header | string | Yes | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
+| Authorization | header | string | Yes | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -718,12 +718,12 @@ GET /api/me/sshkey/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -733,7 +733,7 @@ GET /api/me/sshkey/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -768,7 +768,7 @@ GET /api/me/sshkey/list
 | »» total | integer | true | none | 总数 | none |
 :::
 
-## POST 给当前用户添加 SFTP 公钥 { lang="en" }
+## POST Add SFTP Public Key for Current User { lang="en" }
 
 ## POST 给当前用户添加 SFTP 公钥 { lang="zh-CN" }
 
@@ -779,34 +779,34 @@ POST /api/me/sshkey/add
 POST /api/me/sshkey/add
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » title | body | string | 是 | 公钥名 | none |
-| » key | body | string | 是 | 公钥内容 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » title | body | string | Yes | 公钥名 | none |
+| » key | body | string | Yes | 公钥内容 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | -------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » title | body | string | 是 | 公钥名 | none |
-| » key | body | string | 是 | 公钥内容 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » title | body | string | Yes | 公钥名 | none |
+| » key | body | string | Yes | 公钥内容 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -831,12 +831,12 @@ POST /api/me/sshkey/add
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -846,7 +846,7 @@ POST /api/me/sshkey/add
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -867,7 +867,7 @@ POST /api/me/sshkey/add
 | » data | null | true | none | | none |
 :::
 
-## POST 删除当前用户的 SFTP 公钥 { lang="en" }
+## POST Delete Current User SFTP Public Key { lang="en" }
 
 ## POST 删除当前用户的 SFTP 公钥 { lang="zh-CN" }
 
@@ -878,30 +878,30 @@ POST /api/me/sshkey/delete
 POST /api/me/sshkey/delete
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| id | query | integer | 是 | 公钥主键 | none |
+| Authorization | header | string | Yes | | none |
+| id | query | integer | Yes | 公钥主键 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------- | ---- |
-| Authorization | header | string | 是 | | none |
-| id | query | integer | 是 | 公钥主键 | none |
+| Authorization | header | string | Yes | | none |
+| id | query | integer | Yes | 公钥主键 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -926,12 +926,12 @@ POST /api/me/sshkey/delete
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -941,7 +941,7 @@ POST /api/me/sshkey/delete
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 

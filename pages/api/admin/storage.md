@@ -31,32 +31,32 @@ GET /api/admin/storage/list
 GET /api/admin/storage/list
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | -------- |
-| page | query | string | 否 | 页数 |
-| per_page | query | string | 否 | 每页数目 |
-| Authorization | header | string | 是 | token |
+| page | query | string | No | 页数 |
+| per_page | query | string | No | 每页数目 |
+| Authorization | header | string | Yes | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | -------- |
-| page | query | string | 否 | 页数 |
-| per_page | query | string | 否 | 每页数目 |
-| Authorization | header | string | 是 | token |
+| page | query | string | No | 页数 |
+| per_page | query | string | No | 每页数目 |
+| Authorization | header | string | Yes | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -127,12 +127,12 @@ GET /api/admin/storage/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -142,7 +142,7 @@ GET /api/admin/storage/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -212,30 +212,30 @@ POST /api/admin/storage/enable
 POST /api/admin/storage/enable
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------- | ---- | ------ |
-| id | query | integer | 是 | 存储id |
-| Authorization | header | string | 是 | token |
+| id | query | integer | Yes | 存储id |
+| Authorization | header | string | Yes | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------- | ---- | ------ |
-| id | query | integer | 是 | 存储id |
-| Authorization | header | string | 是 | token |
+| id | query | integer | Yes | 存储id |
+| Authorization | header | string | Yes | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -260,12 +260,12 @@ POST /api/admin/storage/enable
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -275,7 +275,7 @@ POST /api/admin/storage/enable
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -307,30 +307,30 @@ POST /api/admin/storage/disable
 POST /api/admin/storage/disable
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
-| id | query | string | 是 | 存储id |
-| Authorization | header | string | 是 | token |
+| id | query | string | Yes | 存储id |
+| Authorization | header | string | Yes | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ |
-| id | query | string | 是 | 存储id |
-| Authorization | header | string | 是 | token |
+| id | query | string | Yes | 存储id |
+| Authorization | header | string | Yes | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -355,12 +355,12 @@ POST /api/admin/storage/disable
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -370,7 +370,7 @@ POST /api/admin/storage/disable
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -398,7 +398,7 @@ POST /api/admin/storage/disable
 ::: en
 POST /api/admin/storage/create
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -444,60 +444,60 @@ POST /api/admin/storage/create
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------------ | ------ | ------- | ---- | ------------ | ----- |
-| Authorization | header | string | 是 | | token |
-| body | body | object | 否 | | none |
-| » id | body | string | 否 | ID | none |
-| » mount_path | body | string | 是 | 挂载路径 | none |
-| » order | body | integer | 否 | 排序 | none |
-| » driver | body | string | 是 | 驱动 | none |
-| » remark | body | string | 否 | 备注名 | none |
-| » cache_expiration | body | integer | 否 | 缓存过期时间 | none |
-| » status | body | string | 是 | | none |
-| » web_proxy | body | boolean | 是 | web代理 | none |
-| » webdav_policy | body | string | 否 | webdav策略 | none |
-| » down_proxy_url | body | string | 否 | 下载代理 | none |
-| » order_by | body | string | 是 | 排序方式 | none |
-| » extract_folder | body | string | 是 | 提取目录 | none |
-| » order_direction | body | string | 是 | 排序方向 | none |
-| » addition | body | string | 是 | 额外信息 | none |
-| » enable_sign | body | string | 是 | 启用签名 | none |
+| Authorization | header | string | Yes | | token |
+| body | body | object | No | | none |
+| » id | body | string | No | ID | none |
+| » mount_path | body | string | Yes | 挂载路径 | none |
+| » order | body | integer | No | 排序 | none |
+| » driver | body | string | Yes | 驱动 | none |
+| » remark | body | string | No | 备注名 | none |
+| » cache_expiration | body | integer | No | 缓存过期时间 | none |
+| » status | body | string | Yes | | none |
+| » web_proxy | body | boolean | Yes | web代理 | none |
+| » webdav_policy | body | string | No | webdav策略 | none |
+| » down_proxy_url | body | string | No | 下载代理 | none |
+| » order_by | body | string | Yes | 排序方式 | none |
+| » extract_folder | body | string | Yes | 提取目录 | none |
+| » order_direction | body | string | Yes | 排序方向 | none |
+| » addition | body | string | Yes | 额外信息 | none |
+| » enable_sign | body | string | Yes | 启用签名 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------------ | ------ | ------- | ---- | ------------ | ----- |
-| Authorization | header | string | 是 | | token |
-| body | body | object | 否 | | none |
-| » id | body | string | 否 | ID | none |
-| » mount_path | body | string | 是 | 挂载路径 | none |
-| » order | body | integer | 否 | 排序 | none |
-| » driver | body | string | 是 | 驱动 | none |
-| » remark | body | string | 否 | 备注名 | none |
-| » cache_expiration | body | integer | 否 | 缓存过期时间 | none |
-| » status | body | string | 是 | | none |
-| » web_proxy | body | boolean | 是 | web代理 | none |
-| » webdav_policy | body | string | 否 | webdav策略 | none |
-| » down_proxy_url | body | string | 否 | 下载代理 | none |
-| » order_by | body | string | 是 | 排序方式 | none |
-| » extract_folder | body | string | 是 | 提取目录 | none |
-| » order_direction | body | string | 是 | 排序方向 | none |
-| » addition | body | string | 是 | 额外信息 | none |
-| » enable_sign | body | string | 是 | 启用签名 | none |
+| Authorization | header | string | Yes | | token |
+| body | body | object | No | | none |
+| » id | body | string | No | ID | none |
+| » mount_path | body | string | Yes | 挂载路径 | none |
+| » order | body | integer | No | 排序 | none |
+| » driver | body | string | Yes | 驱动 | none |
+| » remark | body | string | No | 备注名 | none |
+| » cache_expiration | body | integer | No | 缓存过期时间 | none |
+| » status | body | string | Yes | | none |
+| » web_proxy | body | boolean | Yes | web代理 | none |
+| » webdav_policy | body | string | No | webdav策略 | none |
+| » down_proxy_url | body | string | No | 下载代理 | none |
+| » order_by | body | string | Yes | 排序方式 | none |
+| » extract_folder | body | string | Yes | 提取目录 | none |
+| » order_direction | body | string | Yes | 排序方向 | none |
+| » addition | body | string | Yes | 额外信息 | none |
+| » enable_sign | body | string | Yes | 启用签名 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -526,12 +526,12 @@ POST /api/admin/storage/create
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -541,7 +541,7 @@ POST /api/admin/storage/create
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -564,14 +564,14 @@ POST /api/admin/storage/create
 | »» id | integer | true | none | | none |
 :::
 
-## POST 更新存储 { lang="en" }
+## POST Update Storage { lang="en" }
 
 ## POST 更新存储 { lang="zh-CN" }
 
 ::: en
 POST /api/admin/storage/update
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -617,60 +617,60 @@ POST /api/admin/storage/update
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------------ | ------ | ------- | ---- | ------------ | ----- |
-| Authorization | header | string | 是 | | token |
-| body | body | object | 否 | | none |
-| » id | body | string | 否 | ID | none |
-| » mount_path | body | string | 是 | 挂载路径 | none |
-| » order | body | integer | 否 | 排序 | none |
-| » driver | body | string | 是 | 驱动 | none |
-| » remark | body | string | 否 | 备注名 | none |
-| » cache_expiration | body | integer | 否 | 缓存过期时间 | none |
-| » status | body | string | 是 | | none |
-| » web_proxy | body | boolean | 是 | web代理 | none |
-| » webdav_policy | body | string | 否 | webdav策略 | none |
-| » down_proxy_url | body | string | 否 | 下载代理 | none |
-| » order_by | body | string | 是 | 排序方式 | none |
-| » extract_folder | body | string | 是 | 提取目录 | none |
-| » order_direction | body | string | 是 | 排序方向 | none |
-| » addition | body | string | 是 | 额外信息 | none |
-| » enable_sign | body | string | 是 | 启用签名 | none |
+| Authorization | header | string | Yes | | token |
+| body | body | object | No | | none |
+| » id | body | string | No | ID | none |
+| » mount_path | body | string | Yes | 挂载路径 | none |
+| » order | body | integer | No | 排序 | none |
+| » driver | body | string | Yes | 驱动 | none |
+| » remark | body | string | No | 备注名 | none |
+| » cache_expiration | body | integer | No | 缓存过期时间 | none |
+| » status | body | string | Yes | | none |
+| » web_proxy | body | boolean | Yes | web代理 | none |
+| » webdav_policy | body | string | No | webdav策略 | none |
+| » down_proxy_url | body | string | No | 下载代理 | none |
+| » order_by | body | string | Yes | 排序方式 | none |
+| » extract_folder | body | string | Yes | 提取目录 | none |
+| » order_direction | body | string | Yes | 排序方向 | none |
+| » addition | body | string | Yes | 额外信息 | none |
+| » enable_sign | body | string | Yes | 启用签名 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------------ | ------ | ------- | ---- | ------------ | ----- |
-| Authorization | header | string | 是 | | token |
-| body | body | object | 否 | | none |
-| » id | body | string | 否 | ID | none |
-| » mount_path | body | string | 是 | 挂载路径 | none |
-| » order | body | integer | 否 | 排序 | none |
-| » driver | body | string | 是 | 驱动 | none |
-| » remark | body | string | 否 | 备注名 | none |
-| » cache_expiration | body | integer | 否 | 缓存过期时间 | none |
-| » status | body | string | 是 | | none |
-| » web_proxy | body | boolean | 是 | web代理 | none |
-| » webdav_policy | body | string | 否 | webdav策略 | none |
-| » down_proxy_url | body | string | 否 | 下载代理 | none |
-| » order_by | body | string | 是 | 排序方式 | none |
-| » extract_folder | body | string | 是 | 提取目录 | none |
-| » order_direction | body | string | 是 | 排序方向 | none |
-| » addition | body | string | 是 | 额外信息 | none |
-| » enable_sign | body | string | 是 | 启用签名 | none |
+| Authorization | header | string | Yes | | token |
+| body | body | object | No | | none |
+| » id | body | string | No | ID | none |
+| » mount_path | body | string | Yes | 挂载路径 | none |
+| » order | body | integer | No | 排序 | none |
+| » driver | body | string | Yes | 驱动 | none |
+| » remark | body | string | No | 备注名 | none |
+| » cache_expiration | body | integer | No | 缓存过期时间 | none |
+| » status | body | string | Yes | | none |
+| » web_proxy | body | boolean | Yes | web代理 | none |
+| » webdav_policy | body | string | No | webdav策略 | none |
+| » down_proxy_url | body | string | No | 下载代理 | none |
+| » order_by | body | string | Yes | 排序方式 | none |
+| » extract_folder | body | string | Yes | 提取目录 | none |
+| » order_direction | body | string | Yes | 排序方向 | none |
+| » addition | body | string | Yes | 额外信息 | none |
+| » enable_sign | body | string | Yes | 启用签名 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -699,12 +699,12 @@ POST /api/admin/storage/update
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -714,7 +714,7 @@ POST /api/admin/storage/update
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -737,7 +737,7 @@ POST /api/admin/storage/update
 | »» id | integer | true | none | | none |
 :::
 
-## GET 查询指定存储信息 { lang="en" }
+## GET Get Specific Storage Info { lang="en" }
 
 ## GET 查询指定存储信息 { lang="zh-CN" }
 
@@ -748,30 +748,30 @@ GET /api/admin/storage/get
 GET /api/admin/storage/get
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ------ |
-| id | query | string | 是 | | 存储id |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | | 存储id |
+| Authorization | header | string | Yes | | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ------ |
-| id | query | string | 是 | | 存储id |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | | 存储id |
+| Authorization | header | string | Yes | | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -830,12 +830,12 @@ GET /api/admin/storage/get
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -845,7 +845,7 @@ GET /api/admin/storage/get
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -898,7 +898,7 @@ GET /api/admin/storage/get
 | »» down_proxy_url | string | true | none | 下载代理 | none |
 :::
 
-## POST 删除指定存储 { lang="en" }
+## POST Delete Specific Storage { lang="en" }
 
 ## POST 删除指定存储 { lang="zh-CN" }
 
@@ -909,30 +909,30 @@ POST /api/admin/storage/delete
 POST /api/admin/storage/delete
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ------ |
-| id | query | string | 否 | | 存储id |
-| Authorization | header | string | 是 | | token |
+| id | query | string | No | | 存储id |
+| Authorization | header | string | Yes | | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ------ |
-| id | query | string | 否 | | 存储id |
-| Authorization | header | string | 是 | | token |
+| id | query | string | No | | 存储id |
+| Authorization | header | string | Yes | | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -957,12 +957,12 @@ POST /api/admin/storage/delete
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -972,7 +972,7 @@ POST /api/admin/storage/delete
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -993,7 +993,7 @@ POST /api/admin/storage/delete
 | » data | null | true | none | data | data |
 :::
 
-## POST 重新加载所有存储 { lang="en" }
+## POST Reload All Storage { lang="en" }
 
 ## POST 重新加载所有存储 { lang="zh-CN" }
 
@@ -1004,28 +1004,28 @@ POST /api/admin/storage/load_all
 POST /api/admin/storage/load_all
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
+| Authorization | header | string | Yes | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
+| Authorization | header | string | Yes | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1050,12 +1050,12 @@ POST /api/admin/storage/load_all
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1065,7 +1065,7 @@ POST /api/admin/storage/load_all
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 

@@ -18,14 +18,14 @@ sticky: true
 star: true
 ---
 
-## POST 列出全部分享 { lang="en" }
+## POST List All Shares { lang="en" }
 
 ## POST 列出全部分享 { lang="zh-CN" }
 
 ::: en
 POST /api/share/list
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -49,36 +49,36 @@ POST /api/share/list
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » page | body | integer | 否 | 页数 | none |
-| » per_page | body | integer | 否 | 每页数目 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » page | body | integer | No | 页数 | none |
+| » per_page | body | integer | No | 每页数目 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 否 | | none |
-| » page | body | integer | 否 | 页数 | none |
-| » per_page | body | integer | 否 | 每页数目 | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | No | | none |
+| » page | body | integer | No | 页数 | none |
+| » per_page | body | integer | No | 每页数目 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -145,12 +145,12 @@ POST /api/share/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -160,7 +160,7 @@ POST /api/share/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -227,30 +227,30 @@ GET /api/share/get
 GET /api/share/get
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -307,12 +307,12 @@ GET /api/share/get
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -322,7 +322,7 @@ GET /api/share/get
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -373,14 +373,14 @@ GET /api/share/get
 | »» creator_role | integer | true | none | 分享创建者角色 | 0: 普通用户，1: 访客，2: 管理员 |
 :::
 
-## POST 新建分享 { lang="en" }
+## POST Create Share { lang="en" }
 
 ## POST 新建分享 { lang="zh-CN" }
 
 ::: en
 POST /api/share/create
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -422,16 +422,16 @@ POST /api/share/create
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 是 | | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | Yes | | none |
 | » expires | string | true | none | 过期时间 | 不设置时为`""` |
 | » pwd | string | true | none | 分享码 | 不设置时为`""` |
 | » max_accessed | integer | true | none | 最大访问数 | 不设置时为`0` |
@@ -447,9 +447,9 @@ POST /api/share/create
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 是 | | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | Yes | | none |
 | » expires | string | true | none | 过期时间 | 不设置时为`""` |
 | » pwd | string | true | none | 分享码 | 不设置时为`""` |
 | » max_accessed | integer | true | none | 最大访问数 | 不设置时为`0` |
@@ -463,13 +463,13 @@ POST /api/share/create
 | » files | [string] | true | none | 被分享文件路径 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -526,12 +526,12 @@ POST /api/share/create
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -541,7 +541,7 @@ POST /api/share/create
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -592,14 +592,14 @@ POST /api/share/create
 | »» creator_role | integer | true | none | 分享创建者角色 | 0: 普通用户，1: 访客，2: 管理员 |
 :::
 
-## POST 更新分享信息 { lang="en" }
+## POST Update Share Info { lang="en" }
 
 ## POST 更新分享信息 { lang="zh-CN" }
 
 ::: en
 POST /api/share/update
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -645,16 +645,16 @@ POST /api/share/update
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 是 | | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | Yes | | none |
 | » id | string | true | none | 被更新分享 ID | none |
 | » expires | string | true | none | 过期时间 | 取消设置时为`""` |
 | » pwd | string | true | none | 分享码 | 取消设置时为`""` |
@@ -672,9 +672,9 @@ POST /api/share/update
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| Authorization | header | string | 是 | | token |
-| Content-Type | header | string | 否 | | none |
-| body | body | object | 是 | | none |
+| Authorization | header | string | Yes | | token |
+| Content-Type | header | string | No | | none |
+| body | body | object | Yes | | none |
 | » id | string | true | none | 被更新分享 ID | none |
 | » expires | string | true | none | 过期时间 | 取消设置时为`""` |
 | » pwd | string | true | none | 分享码 | 取消设置时为`""` |
@@ -690,13 +690,13 @@ POST /api/share/update
 | » files | [string] | true | none | 被分享文件路径 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -753,12 +753,12 @@ POST /api/share/update
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -768,7 +768,7 @@ POST /api/share/update
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -819,7 +819,7 @@ POST /api/share/update
 | »» creator_role | integer | true | none | 分享创建者角色 | 0: 普通用户，1: 访客，2: 管理员 |
 :::
 
-## POST 删除分享 { lang="en" }
+## POST Delete Share { lang="en" }
 
 ## POST 删除分享 { lang="zh-CN" }
 
@@ -831,30 +831,30 @@ POST /api/share/delete
 POST /api/share/delete
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -879,12 +879,12 @@ POST /api/share/delete
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -894,7 +894,7 @@ POST /api/share/delete
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -915,7 +915,7 @@ POST /api/share/delete
 | » data | null | true | none | | none |
 :::
 
-## POST 启用分享 { lang="en" }
+## POST Enable Share { lang="en" }
 
 ## POST 启用分享 { lang="zh-CN" }
 
@@ -927,30 +927,30 @@ POST /api/share/enable
 POST /api/share/enable
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -975,12 +975,12 @@ POST /api/share/enable
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -990,7 +990,7 @@ POST /api/share/enable
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1011,7 +1011,7 @@ POST /api/share/enable
 | » data | null | true | none | | none |
 :::
 
-## POST 禁用分享 { lang="en" }
+## POST Disable Share { lang="en" }
 
 ## POST 禁用分享 { lang="zh-CN" }
 
@@ -1023,30 +1023,30 @@ POST /api/share/disable
 POST /api/share/disable
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ---------- | ----- |
-| id | query | string | 是 | 分享 ID | none |
-| Authorization | header | string | 是 | | token |
+| id | query | string | Yes | 分享 ID | none |
+| Authorization | header | string | Yes | | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1071,12 +1071,12 @@ POST /api/share/disable
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | --------- | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1086,7 +1086,7 @@ POST /api/share/disable
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 

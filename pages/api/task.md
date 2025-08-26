@@ -89,12 +89,12 @@ POST /api/task/upload/info
 POST /api/task/upload/info
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
 | tid | query | string | no | 任务id |
 | Authorization | header | string | yes | none |
@@ -106,13 +106,13 @@ POST /api/task/upload/info
 | Authorization | header | string | yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -165,12 +165,12 @@ POST /api/task/upload/info
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -180,7 +180,7 @@ POST /api/task/upload/info
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -234,28 +234,28 @@ GET /api/task/upload/done
 GET /api/task/upload/done
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -308,12 +308,12 @@ GET /api/task/upload/done
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -323,7 +323,7 @@ GET /api/task/upload/done
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -377,28 +377,28 @@ GET /api/task/upload/undone
 GET /api/task/upload/undone
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -451,12 +451,12 @@ GET /api/task/upload/undone
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -466,7 +466,7 @@ GET /api/task/upload/undone
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -520,30 +520,30 @@ POST /api/task/upload/delete
 POST /api/task/upload/delete
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
-| tid | query | string | 是 | 任务id |
-| Authorization | header | string | 是 | none |
+| tid | query | string | Yes | 任务id |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ |
-| tid | query | string | 是 | 任务id |
-| Authorization | header | string | 是 | none |
+| tid | query | string | Yes | 任务id |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -568,12 +568,12 @@ POST /api/task/upload/delete
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -583,7 +583,7 @@ POST /api/task/upload/delete
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -604,7 +604,7 @@ POST /api/task/upload/delete
 | » data | null | true | none | | none |
 :::
 
-## POST 取消任务 { lang="en" }
+## POST Cancel Task { lang="en" }
 
 ## POST 取消任务 { lang="zh-CN" }
 
@@ -615,30 +615,30 @@ POST /api/task/upload/cancel
 POST /api/task/upload/cancel
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
-| tid | query | string | 是 | 任务id |
-| Authorization | header | string | 是 | none |
+| tid | query | string | Yes | 任务id |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ |
-| tid | query | string | 是 | 任务id |
-| Authorization | header | string | 是 | none |
+| tid | query | string | Yes | 任务id |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -663,12 +663,12 @@ POST /api/task/upload/cancel
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -678,7 +678,7 @@ POST /api/task/upload/cancel
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -710,28 +710,28 @@ POST /api/task/upload/clear_done
 POST /api/task/upload/clear_done
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -756,12 +756,12 @@ POST /api/task/upload/clear_done
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -771,7 +771,7 @@ POST /api/task/upload/clear_done
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -803,28 +803,28 @@ POST /api/task/upload/clear_succeeded
 POST /api/task/upload/clear_succeeded
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -849,12 +849,12 @@ POST /api/task/upload/clear_succeeded
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -864,7 +864,7 @@ POST /api/task/upload/clear_succeeded
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -885,7 +885,7 @@ POST /api/task/upload/clear_succeeded
 | » data | null | true | none | | none |
 :::
 
-## POST 重试任务 { lang="en" }
+## POST Retry Task { lang="en" }
 
 ## POST 重试任务 { lang="zh-CN" }
 
@@ -896,30 +896,30 @@ POST /api/task/upload/retry
 POST /api/task/upload/retry
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
-| tid | query | string | 是 | 任务id |
-| Authorization | header | string | 是 | none |
+| tid | query | string | Yes | 任务id |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ |
-| tid | query | string | 是 | 任务id |
-| Authorization | header | string | 是 | none |
+| tid | query | string | Yes | 任务id |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -944,12 +944,12 @@ POST /api/task/upload/retry
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -959,7 +959,7 @@ POST /api/task/upload/retry
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -991,28 +991,28 @@ POST /api/task/upload/retry_failed
 POST /api/task/upload/retry_failed
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| Authorization | header | string | 是 | none |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1037,12 +1037,12 @@ POST /api/task/upload/retry_failed
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1052,7 +1052,7 @@ POST /api/task/upload/retry_failed
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1084,21 +1084,21 @@ POST /api/task/upload/delete_some
 POST /api/task/upload/delete_some
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | -------- | ---- | ------ |
-| Authorization | header | string | 是 | none |
-| body | body | [string] | 是 | 任务id |
+| Authorization | header | string | Yes | none |
+| body | body | [string] | Yes | 任务id |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | -------- | ---- | ------ |
-| Authorization | header | string | 是 | none |
-| body | body | [string] | 是 | 任务id |
+| Authorization | header | string | Yes | none |
+| body | body | [string] | Yes | 任务id |
 :::
 
 ### 请求体示例 { lang="en" }
@@ -1120,13 +1120,13 @@ POST /api/task/upload/delete_some
 
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1155,12 +1155,12 @@ POST /api/task/upload/delete_some
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1170,7 +1170,7 @@ POST /api/task/upload/delete_some
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1204,21 +1204,21 @@ POST /api/task/upload/cancel_some
 POST /api/task/upload/cancel_some
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
-| Authorization | header | string | 是 | none |
-| body | body | [string] | 是 | 任务id |
+| Authorization | header | string | Yes | none |
+| body | body | [string] | Yes | 任务id |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | -------- | ---- | ------ |
-| Authorization | header | string | 是 | none |
-| body | body | [string] | 是 | 任务id |
+| Authorization | header | string | Yes | none |
+| body | body | [string] | Yes | 任务id |
 :::
 
 ### 请求体示例 { lang="en" }
@@ -1240,13 +1240,13 @@ POST /api/task/upload/cancel_some
 
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1275,12 +1275,12 @@ POST /api/task/upload/cancel_some
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1290,7 +1290,7 @@ POST /api/task/upload/cancel_some
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -1324,21 +1324,21 @@ POST /api/task/upload/retry_some
 POST /api/task/upload/retry_some
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------ |
-| Authorization | header | string | 是 | none |
-| body | body | [string] | 是 | 任务id |
+| Authorization | header | string | Yes | none |
+| body | body | [string] | Yes | 任务id |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | -------- | ---- | ------ |
-| Authorization | header | string | 是 | none |
-| body | body | [string] | 是 | 任务id |
+| Authorization | header | string | Yes | none |
+| body | body | [string] | Yes | 任务id |
 :::
 
 ### 请求体示例 { lang="en" }
@@ -1360,13 +1360,13 @@ POST /api/task/upload/retry_some
 
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -1395,12 +1395,12 @@ POST /api/task/upload/retry_some
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1410,7 +1410,7 @@ POST /api/task/upload/retry_some
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 

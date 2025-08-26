@@ -31,27 +31,27 @@ GET /api/admin/driver/list
 GET /api/admin/driver/list
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ----- |
-| Authorization | header | string | 是 | token |
+| Authorization | header | string | Yes | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ----- |
-| Authorization | header | string | 是 | token |
+| Authorization | header | string | Yes | token |
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -61,7 +61,7 @@ GET /api/admin/driver/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -85,28 +85,28 @@ GET /api/admin/driver/names
 GET /api/admin/driver/names
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ----- |
-| Authorization | header | string | 是 | token |
+| Authorization | header | string | Yes | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ----- |
-| Authorization | header | string | 是 | token |
+| Authorization | header | string | Yes | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -247,12 +247,12 @@ GET /api/admin/driver/names
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -262,7 +262,7 @@ GET /api/admin/driver/names
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -294,30 +294,30 @@ GET /api/admin/driver/info
 GET /api/admin/driver/info
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ----- |
-| driver | query | string | 是 | none |
-| Authorization | header | string | 是 | token |
+| driver | query | string | Yes | none |
+| Authorization | header | string | Yes | token |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ----- |
-| driver | query | string | 是 | none |
-| Authorization | header | string | 是 | token |
+| driver | query | string | Yes | none |
+| Authorization | header | string | Yes | token |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -566,12 +566,12 @@ GET /api/admin/driver/info
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -581,7 +581,7 @@ GET /api/admin/driver/info
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 

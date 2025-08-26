@@ -20,7 +20,7 @@ sticky: true
 star: true
 ---
 
-## GET 列出元信息 { lang="en" }
+## GET List Meta Info { lang="en" }
 
 ## GET 列出元信息 { lang="zh-CN" }
 
@@ -31,32 +31,32 @@ GET /api/admin/meta/list
 GET /api/admin/meta/list
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | -------- |
-| page | query | string | 否 | 页数 |
-| per_page | query | string | 否 | 每页个数 |
-| Authorization | header | string | 是 | none |
+| page | query | string | No | 页数 |
+| per_page | query | string | No | 每页个数 |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | -------- |
-| page | query | string | 否 | 页数 |
-| per_page | query | string | 否 | 每页个数 |
-| Authorization | header | string | 是 | none |
+| page | query | string | No | 页数 |
+| per_page | query | string | No | 每页个数 |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -113,12 +113,12 @@ GET /api/admin/meta/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -128,7 +128,7 @@ GET /api/admin/meta/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -173,7 +173,7 @@ GET /api/admin/meta/list
 | »» total | integer | true | none | 总数 | none |
 :::
 
-## GET 获取元信息 { lang="en" }
+## GET Get Meta Info { lang="en" }
 
 ## GET 获取元信息 { lang="zh-CN" }
 
@@ -184,30 +184,30 @@ GET /api/admin/meta/get
 GET /api/admin/meta/get
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | -------- |
-| id | query | string | 是 | 元信息id |
-| Authorization | header | string | 是 | none |
+| id | query | string | Yes | 元信息id |
+| Authorization | header | string | Yes | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | -------- |
-| id | query | string | 是 | 元信息id |
-| Authorization | header | string | 是 | none |
+| id | query | string | Yes | 元信息id |
+| Authorization | header | string | Yes | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -254,12 +254,12 @@ GET /api/admin/meta/get
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -269,7 +269,7 @@ GET /api/admin/meta/get
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -310,14 +310,14 @@ GET /api/admin/meta/get
 | »» r_sub | boolean | true | none | 说明是否应用到子文件夹 | none |
 :::
 
-## POST 新增元信息 { lang="en" }
+## POST Add Meta Info { lang="en" }
 
 ## POST 新增元信息 { lang="zh-CN" }
 
 ::: en
 POST /api/admin/meta/create
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -357,50 +357,50 @@ POST /api/admin/meta/create
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------------------------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 是 | id | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 是 | 密码 | none |
-| » p_sub | body | boolean | 是 | 密码是否应用到子文件夹 | none |
-| » write | body | boolean | 是 | 开启写入 | none |
-| » w_sub | body | boolean | 是 | 开启写入是否应用到子文件夹 | none |
-| » hide | body | string | 是 | 隐藏 | none |
-| » h_sub | body | boolean | 是 | 隐藏是否应用到子文件夹 | none |
-| » readme | body | string | 是 | 说明 | none |
-| » r_sub | body | boolean | 是 | 说明是否应用到子文件夹 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | Yes | id | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | Yes | 密码 | none |
+| » p_sub | body | boolean | Yes | 密码是否应用到子文件夹 | none |
+| » write | body | boolean | Yes | 开启写入 | none |
+| » w_sub | body | boolean | Yes | 开启写入是否应用到子文件夹 | none |
+| » hide | body | string | Yes | 隐藏 | none |
+| » h_sub | body | boolean | Yes | 隐藏是否应用到子文件夹 | none |
+| » readme | body | string | Yes | 说明 | none |
+| » r_sub | body | boolean | Yes | 说明是否应用到子文件夹 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------------------------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 是 | id | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 是 | 密码 | none |
-| » p_sub | body | boolean | 是 | 密码是否应用到子文件夹 | none |
-| » write | body | boolean | 是 | 开启写入 | none |
-| » w_sub | body | boolean | 是 | 开启写入是否应用到子文件夹 | none |
-| » hide | body | string | 是 | 隐藏 | none |
-| » h_sub | body | boolean | 是 | 隐藏是否应用到子文件夹 | none |
-| » readme | body | string | 是 | 说明 | none |
-| » r_sub | body | boolean | 是 | 说明是否应用到子文件夹 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | Yes | id | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | Yes | 密码 | none |
+| » p_sub | body | boolean | Yes | 密码是否应用到子文件夹 | none |
+| » write | body | boolean | Yes | 开启写入 | none |
+| » w_sub | body | boolean | Yes | 开启写入是否应用到子文件夹 | none |
+| » hide | body | string | Yes | 隐藏 | none |
+| » h_sub | body | boolean | Yes | 隐藏是否应用到子文件夹 | none |
+| » readme | body | string | Yes | 说明 | none |
+| » r_sub | body | boolean | Yes | 说明是否应用到子文件夹 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -425,12 +425,12 @@ POST /api/admin/meta/create
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -440,7 +440,7 @@ POST /api/admin/meta/create
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -461,14 +461,14 @@ POST /api/admin/meta/create
 | » data | null | true | none | | none |
 :::
 
-## POST 更新元信息 { lang="en" }
+## POST Update Meta Info { lang="en" }
 
 ## POST 更新元信息 { lang="zh-CN" }
 
 ::: en
 POST /api/admin/meta/update
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -508,50 +508,50 @@ POST /api/admin/meta/update
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------------------------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 是 | id | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 是 | 密码 | none |
-| » p_sub | body | boolean | 是 | 密码是否应用到子文件夹 | none |
-| » write | body | boolean | 是 | 开启写入 | none |
-| » w_sub | body | boolean | 是 | 开启写入是否应用到子文件夹 | none |
-| » hide | body | string | 是 | 隐藏 | none |
-| » h_sub | body | boolean | 是 | 隐藏是否应用到子文件夹 | none |
-| » readme | body | string | 是 | 说明 | none |
-| » r_sub | body | boolean | 是 | 说明是否应用到子文件夹 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | Yes | id | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | Yes | 密码 | none |
+| » p_sub | body | boolean | Yes | 密码是否应用到子文件夹 | none |
+| » write | body | boolean | Yes | 开启写入 | none |
+| » w_sub | body | boolean | Yes | 开启写入是否应用到子文件夹 | none |
+| » hide | body | string | Yes | 隐藏 | none |
+| » h_sub | body | boolean | Yes | 隐藏是否应用到子文件夹 | none |
+| » readme | body | string | Yes | 说明 | none |
+| » r_sub | body | boolean | Yes | 说明是否应用到子文件夹 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------- | ---- | -------------------------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » id | body | integer | 是 | id | none |
-| » path | body | string | 是 | 路径 | none |
-| » password | body | string | 是 | 密码 | none |
-| » p_sub | body | boolean | 是 | 密码是否应用到子文件夹 | none |
-| » write | body | boolean | 是 | 开启写入 | none |
-| » w_sub | body | boolean | 是 | 开启写入是否应用到子文件夹 | none |
-| » hide | body | string | 是 | 隐藏 | none |
-| » h_sub | body | boolean | 是 | 隐藏是否应用到子文件夹 | none |
-| » readme | body | string | 是 | 说明 | none |
-| » r_sub | body | boolean | 是 | 说明是否应用到子文件夹 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » id | body | integer | Yes | id | none |
+| » path | body | string | Yes | 路径 | none |
+| » password | body | string | Yes | 密码 | none |
+| » p_sub | body | boolean | Yes | 密码是否应用到子文件夹 | none |
+| » write | body | boolean | Yes | 开启写入 | none |
+| » w_sub | body | boolean | Yes | 开启写入是否应用到子文件夹 | none |
+| » hide | body | string | Yes | 隐藏 | none |
+| » h_sub | body | boolean | Yes | 隐藏是否应用到子文件夹 | none |
+| » readme | body | string | Yes | 说明 | none |
+| » r_sub | body | boolean | Yes | 说明是否应用到子文件夹 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -576,12 +576,12 @@ POST /api/admin/meta/update
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -591,7 +591,7 @@ POST /api/admin/meta/update
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -612,7 +612,7 @@ POST /api/admin/meta/update
 | » data | null | true | none | | none |
 :::
 
-## POST 删除元信息 { lang="en" }
+## POST Delete Meta Info { lang="en" }
 
 ## POST 删除元信息 { lang="zh-CN" }
 
@@ -623,30 +623,30 @@ POST /api/admin/meta/delete
 POST /api/admin/meta/delete
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| id | query | string | 是 | | none |
-| Authorization | header | string | 是 | | none |
+| id | query | string | Yes | | none |
+| Authorization | header | string | Yes | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| id | query | string | 是 | | none |
-| Authorization | header | string | 是 | | none |
+| id | query | string | Yes | | none |
+| Authorization | header | string | Yes | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -671,12 +671,12 @@ POST /api/admin/meta/delete
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -686,7 +686,7 @@ POST /api/admin/meta/delete
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 

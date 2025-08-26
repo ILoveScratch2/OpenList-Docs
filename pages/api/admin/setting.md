@@ -20,7 +20,7 @@ sticky: true
 star: true
 ---
 
-## GET 列出设置 { lang="en" }
+## GET List Settings { lang="en" }
 
 ## GET 列出设置 { lang="zh-CN" }
 
@@ -33,32 +33,32 @@ GET /api/admin/setting/list
 包括永久令牌
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ------------------------------------------ |
-| groups | query | string | 否 | 5,0-其它设置，包括aria2和令牌等 |
-| group | query | string | 否 | 1-站点；2-样式；3-预览；4-全局；7-单点登录 |
-| Authorization | header | string | 否 | none |
+| groups | query | string | No | 5,0-其它设置，包括aria2和令牌等 |
+| group | query | string | No | 1-站点；2-样式；3-预览；4-全局；7-单点登录 |
+| Authorization | header | string | No | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ------------------------------------------ |
-| groups | query | string | 否 | 5,0-其它设置，包括aria2和令牌等 |
-| group | query | string | 否 | 1-站点；2-样式；3-预览；4-全局；7-单点登录 |
-| Authorization | header | string | 否 | none |
+| groups | query | string | No | 5,0-其它设置，包括aria2和令牌等 |
+| group | query | string | No | 1-站点；2-样式；3-预览；4-全局；7-单点登录 |
+| Authorization | header | string | No | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -193,12 +193,12 @@ GET /api/admin/setting/list
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -208,7 +208,7 @@ GET /api/admin/setting/list
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -243,7 +243,7 @@ GET /api/admin/setting/list
 | »» flag | integer | true | none | 标志 | 0 = public, 1 = private, 2 = readonly, 3 = deprecated |
 :::
 
-## GET 获取某项设置 { lang="en" }
+## GET Get Specific Setting { lang="en" }
 
 ## GET 获取某项设置 { lang="zh-CN" }
 
@@ -254,32 +254,32 @@ GET /api/admin/setting/get
 GET /api/admin/setting/get
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
-| 名称 | 位置 | 类型 | 必选 | 说明 |
+| Name | Position | Type | Required | Description |
 | ------------- | ------ | ------ | ---- | ---- |
-| keys | query | string | 否 | none |
-| key | query | string | 否 | none |
-| Authorization | header | string | 否 | none |
+| keys | query | string | No | none |
+| key | query | string | No | none |
+| Authorization | header | string | No | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 说明 |
 | ------------- | ------ | ------ | ---- | ---- |
-| keys | query | string | 否 | none |
-| key | query | string | 否 | none |
-| Authorization | header | string | 否 | none |
+| keys | query | string | No | none |
+| key | query | string | No | none |
+| Authorization | header | string | No | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -320,12 +320,12 @@ GET /api/admin/setting/get
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -335,7 +335,7 @@ GET /api/admin/setting/get
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -370,14 +370,14 @@ GET /api/admin/setting/get
 | »» flag | integer | true | none | 标志 | 0 = public, 1 = private, 2 = readonly, 3 = deprecated |
 :::
 
-## POST 保存设置 { lang="en" }
+## POST Save Settings { lang="en" }
 
 ## POST 保存设置 { lang="zh-CN" }
 
 ::: en
 POST /api/admin/setting/save
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 [
@@ -541,30 +541,30 @@ POST /api/admin/setting/save
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------------- | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | array[object] | 否 | 数组 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | array[object] | No | 数组 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------------- | ---- | ------ | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | array[object] | 否 | 数组 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | array[object] | No | 数组 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -589,12 +589,12 @@ POST /api/admin/setting/save
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -604,7 +604,7 @@ POST /api/admin/setting/save
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -638,24 +638,24 @@ POST /api/admin/setting/delete
 仅用于弃用的设置
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| key | query | string | 是 | | none |
-| Authorization | header | string | 是 | | none |
+| key | query | string | Yes | | none |
+| Authorization | header | string | Yes | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| key | query | string | 是 | | none |
-| Authorization | header | string | 是 | | none |
+| key | query | string | Yes | | none |
+| Authorization | header | string | Yes | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
@@ -678,12 +678,12 @@ POST /api/admin/setting/delete
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -693,7 +693,7 @@ POST /api/admin/setting/delete
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -708,28 +708,28 @@ POST /api/admin/setting/reset_token
 POST /api/admin/setting/reset_token
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 否 | | none |
+| Authorization | header | string | No | | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | ------ | ---- |
-| Authorization | header | string | 否 | | none |
+| Authorization | header | string | No | | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -754,12 +754,12 @@ POST /api/admin/setting/reset_token
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -769,7 +769,7 @@ POST /api/admin/setting/reset_token
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -790,14 +790,14 @@ POST /api/admin/setting/reset_token
 | » data | string | true | none | 新令牌 | none |
 :::
 
-## POST 设置aria2 { lang="en" }
+## POST Set aria2 { lang="en" }
 
 ## POST 设置aria2 { lang="zh-CN" }
 
 ::: en
 POST /api/admin/setting/set_aria2
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -821,34 +821,34 @@ POST /api/admin/setting/set_aria2
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | --------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » uri | body | string | 是 | aria2地址 | none |
-| » secret | body | string | 是 | aria2密钥 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » uri | body | string | Yes | aria2地址 | none |
+| » secret | body | string | Yes | aria2密钥 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | --------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » uri | body | string | 是 | aria2地址 | none |
-| » secret | body | string | 是 | aria2密钥 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » uri | body | string | Yes | aria2地址 | none |
+| » secret | body | string | Yes | aria2密钥 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -873,12 +873,12 @@ POST /api/admin/setting/set_aria2
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -888,7 +888,7 @@ POST /api/admin/setting/set_aria2
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
@@ -909,14 +909,14 @@ POST /api/admin/setting/set_aria2
 | » data | string | true | none | aria2版本 | none |
 :::
 
-## POST 设置qBittorrent { lang="en" }
+## POST Set qBittorrent { lang="en" }
 
 ## POST 设置qBittorrent { lang="zh-CN" }
 
 ::: en
 POST /api/admin/setting/set_qbit
 
-> Body 请求参数
+> Body Request Parameters
 
 ```json
 {
@@ -940,34 +940,34 @@ POST /api/admin/setting/set_qbit
 
 :::
 
-### 请求参数 { lang="en" }
+### Request Parameters { lang="en" }
 
 ### 请求参数 { lang="zh-CN" }
 
 ::: en
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | --------------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » url | body | string | 是 | qBittorrent链接 | none |
-| » seedtime | body | string | 是 | 做种时间 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » url | body | string | Yes | qBittorrent链接 | none |
+| » seedtime | body | string | Yes | 做种时间 | none |
 :::
 ::: zh-CN
 | 名称 | 位置 | 类型 | 必选 | 中文名 | 说明 |
 | ------------- | ------ | ------ | ---- | --------------- | ---- |
-| Authorization | header | string | 是 | | none |
-| body | body | object | 否 | | none |
-| » url | body | string | 是 | qBittorrent链接 | none |
-| » seedtime | body | string | 是 | 做种时间 | none |
+| Authorization | header | string | Yes | | none |
+| body | body | object | No | | none |
+| » url | body | string | Yes | qBittorrent链接 | none |
+| » seedtime | body | string | Yes | 做种时间 | none |
 :::
 
-### 返回示例 { lang="en" }
+### Response Example { lang="en" }
 
 ### 返回示例 { lang="zh-CN" }
 
 ::: en
 
-> 成功
+> Success
 
 ```json
 {
@@ -992,12 +992,12 @@ POST /api/admin/setting/set_qbit
 
 :::
 
-### 返回结果 { lang="en" }
+### Response Result { lang="en" }
 
 ### 返回结果 { lang="zh-CN" }
 
 ::: en
-| 状态码 | 状态码含义 | 说明 | 数据模型 |
+| Status Code | Status Code Meaning | Description | Data Model |
 | ------ | ------------------------------------------------------- | ---- | -------- |
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
@@ -1007,7 +1007,7 @@ POST /api/admin/setting/set_qbit
 | 200 | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | 成功 | Inline |
 :::
 
-### 返回数据结构 { lang="en" }
+### Response Data Structure { lang="en" }
 
 ### 返回数据结构 { lang="zh-CN" }
 
