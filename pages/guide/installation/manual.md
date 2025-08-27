@@ -216,7 +216,7 @@ OpenList 遵循 AGPL 3.0 开源协议，对任何下游衍生项目概不负责�
 :::
 
 ::: en
-There are three ways to choose based on your needs
+There are four ways to choose based on your needs
 
 1. Using **https://github.com/OpenListTeam/OpenList-Mobile**
 2. Using **https://github.com/LeoHaoVIP/AListLiteAndroid**
@@ -227,11 +227,11 @@ There are three ways to choose based on your needs
 
 :::
 ::: zh-CN
-有三种办法根据自己的需求选择
+有四种办法根据自己的需求选择
 
 1. 使用 **https://github.com/OpenListTeam/OpenList-Mobile**
 2. 使用 **https://github.com/LeoHaoVIP/AListLiteAndroid**
-3. 使用 **https://github.com/jing332/AListFlutter**(已停止维护)
+3. 使用 **https://github.com/jing332/AListFlutter** (已停止维护)
 4. 使用 `termux` 运行
    - 参考：**https://anwen-anyi.github.io/index/14-android_install.html**
    - 注意事项：记得给APP授权，后台运行、电池省电策略设置为无限制，否则可能会被杀后台导致挂在后台使用期间突然中断无法使用
