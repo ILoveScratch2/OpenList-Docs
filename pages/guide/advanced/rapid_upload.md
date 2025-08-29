@@ -60,7 +60,7 @@ top: 130
 | 谷歌云盘 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x: | :x: | :x: | :x: | :no_entry_sign: |
 | OneDrive | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :grey_question: | :no_entry_sign: |
 
-1. 这里提到的**阿里云盘**是指的[**阿里云盘Open**](../../../zh/guide/drivers/aliyundrive_open.md)
+1. 这里提到的**阿里云盘**是指的[**阿里云盘Open**](../../guide/drivers/aliyundrive_open.md)
 2. **OneDrive** 是因为已经没有了帐号暂时没有进行测试，如果有进行测试有效无问题，欢迎反馈
 3. **阿里云盘Open** 和 **天翼云盘**：都需要在存储配置中将配置中的秒传选项打开，否则无法秒传
 4. 将**谷歌云盘**文件秒传到**天翼云盘** 和 **天翼云盘**将文件秒传到**天翼云盘**，可能有一些问题，并不是很稳定，需要留意观察

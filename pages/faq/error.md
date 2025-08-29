@@ -282,12 +282,12 @@ This article will collect some error codes that may occur during the use of Open
 ::: en
 **Q**：failed to start: listen tcp 0.0.0.0:5244: bind: address already in use （**When starting the OpenList program**）
 
-**A**：Port number 5244 is already in use, check whether it is occupied (generally you have started an OpenList with port 5244), or modify the port number started by OpenList, [**How to modify**](../config/configuration.md#port)
+**A**：Port number 5244 is already in use, check whether it is occupied (generally you have started an OpenList with port 5244), or modify the port number started by OpenList, [**How to modify**](../configuration/configuration.md#scheme)
 :::
 ::: zh-CN
 **Q**：failed to start: listen tcp 0.0.0.0:5244: bind: address already in use （**启动OpenList程序时**）
 
-**A**：5244端口号已经被使用，排查是否被占用(一般来说你已经启动了一个5244端口的OpenList导致的)，或者修改OpenList启动的端口号,[**如何修改**](../config/configuration.md#port)
+**A**：5244端口号已经被使用，排查是否被占用(一般来说你已经启动了一个5244端口的OpenList导致的)，或者修改OpenList启动的端口号,[**如何修改**](../configuration/configuration.md#scheme)
 :::
 
 ---

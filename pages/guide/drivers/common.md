@@ -192,10 +192,10 @@ Cache time of directory structure.
 ## Web 代理 { lang="zh-CN" }
 
 ::: en
-Whether the web preview,download and the direct link go through the transfer. If you open this, recommended you set [site_url](../../configuration/configuration.md#site-url-1) so that OpenList can works fine.
+Whether the web preview,download and the direct link go through the transfer. If you open this, recommended you set [site_url](../../configuration/configuration.md#site-url) so that OpenList can works fine.
 :::
 ::: zh-CN
-网页预览、下载和直接链接是否通过中转。如果你打开此项，建议你设置[site_url](../../configuration/configuration.md#site-url-1)，以帮助OpenList更好的工作。
+网页预览、下载和直接链接是否通过中转。如果你打开此项，建议你设置[site_url](../../configuration/configuration.md#site-url)，以帮助OpenList更好的工作。
 :::
 
 ::: en

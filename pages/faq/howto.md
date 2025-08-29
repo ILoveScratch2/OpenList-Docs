@@ -32,7 +32,7 @@ Add a [meta](../guide/advanced/meta.md) record.
 An example of using nginx to reverse proxy to https://example.com/openlist:
 
 - Normal installation
-- Set [site_url](../config/configuration.md#site_url) to `https://example.com/openlist` or just `/openlist` then restart openlist
+- Set [site_url](../configuration/configuration.md#site-url) to `https://example.com/openlist` or just `/openlist` then restart openlist
 - Add a reverse proxy record in nginx
 
 ```nginx
@@ -55,7 +55,7 @@ location /openlist/ {
 使用 nginx 反向代理到 https://example.com/openlist 的示例：
 
 - 正常安装
-- 将 [site_url](../config/configuration.md#site_url) 设置为 `https://example.com/openlist` 或者仅`/openlist`, 然后重启 OpenList
+- 将 [site_url](../configuration/configuration.md#site-url) 设置为 `https://example.com/openlist` 或者仅`/openlist`, 然后重启 OpenList
 - 在 nginx 中添加反向代理配置
 
 ```nginx
@@ -107,10 +107,10 @@ If the password is forgotten, it can only be re-**`randomly generated`** or **`m
 ## 如何修改监听端口 { lang="zh-CN" }
 
 :::en
-Refer to [config](../config/configuration.md#port)
+Refer to [config](../configuration/configuration.md#scheme)
 :::
 :::zh-CN
-参考[config](../config/configuration.md#port)
+参考[config](../configuration/configuration.md#scheme)
 :::
 
 ## How to upgrade { lang="en" }
@@ -171,7 +171,7 @@ Open the Tianyi Account website at <https://e.dlife.cn/index.do>, log in, and th
 
 - Click Edit, write the verification code you just saw into the configuration and click Save
 - Click Edit and turn on the Do not use OCR button
-- Or build it yourself [**Ocr interface**](../config/global.md#ocr-api)
+- Or build it yourself [**Ocr interface**](../configuration/global.md#ocr-api)
 - **189 Cloud** Driver has been replaced with sliding verification code because web login has been replaced.**No longer supports OCR and manual input**, if the verification code needs to be used, please use the addition of `Cookie to log in` or use the `189 Cloud PC` Driver. Note: The 189 Cloud Driver is different from the 189 Cloud PC Driver.
 
 :::
@@ -179,7 +179,7 @@ Open the Tianyi Account website at <https://e.dlife.cn/index.do>, log in, and th
 
 - 点击编辑，将刚才看到的验证码输入配置中，并点击保存。
 - 点击编辑并开启“不使用 OCR”按钮。
-- 或者自行搭建 [**OCR 接口**](../config/global.md#ocr-api)。
+- 或者自行搭建 [**OCR 接口**](../configuration/global.md#ocr-接口)。
 - **天翼云盘** 驱动已被滑动验证码取代，因为网页登录方式已更改。**不再支持 OCR 和手动输入**，如果需要使用验证码，请使用 `Cookie 登录` 或者使用 `天翼云盘客户端` 驱动。注意：天翼云盘 驱动与 天翼云盘客户端 驱动不同。
 
 :::
@@ -213,7 +213,7 @@ Background --> Settings --> Preview --> Iframe preview, written behind the PDF
 Version 3.7.x and higher already support ".epub" reading
 But you need to add it manually (because the database has already been created, it is not good to overwrite it for you, and you will make mistakes)
 If it is the first installation and startup (version 3.7.x and higher), no need to add it manually
-If the secondary directory reverse generation is set, please add the corresponding prefix in [site_url](../config/configuration.md#site-url), and then restart OpenList to take effect
+If the secondary directory reverse generation is set, please add the corresponding prefix in [site_url](../configuration/configuration.md#site-url), and then restart OpenList to take effect
 :::
 :::zh-CN
 后台 ——>设置——>预览——>Iframe 预览，写在PDF后面
@@ -229,7 +229,7 @@ If the secondary directory reverse generation is set, please add the correspondi
 3.7.x 版本及更高的版本已经支持 ".epub" 阅读
 但是需要自己手动添加(因为已经创建过数据库了 不好给你覆盖会出错)
 如果是第一次安装启动（3.7.x版本及更高的版本）不用手动添加
-如果设置了二级目录反代，请在[site_url](../config/configuration.md#site-url)中自行添加相应前缀，然后重启OpenList才会生效
+如果设置了二级目录反代，请在[site_url](../configuration/configuration.md#site-url)中自行添加相应前缀，然后重启OpenList才会生效
 :::
 
 ### How to quickly locate bugs { lang="en" }
