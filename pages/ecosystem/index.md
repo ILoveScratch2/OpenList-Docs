@@ -79,11 +79,15 @@ OpenList流量代理程序，可以利用另一台服务器代理OpenList的流�
 ::: en
 ::: tip
 Third-party open source projects are based on community open-source security. The following projects are not affiliated with OpenListTeam. Please evaluate the associated risks before deploying them to a production environment.
+
+If you have a new project that is not listed here, you can submit it through [Issues](https://github.com/OpenListTeam/OpenList-Docs/issues) or [Pull Request](https://github.com/OpenListTeam/OpenList-Docs/pulls).
 :::
 
 ::: zh-CN
 ::: tip
 以下第三方开源项目均由社区开发并保持开源，与 OpenListTeam 无直接关联。在部署到生产环境前，请自行评估相关风险。
+
+如果您有新的项目没有在此列出，可以通过 [Issues](https://github.com/OpenListTeam/OpenList-Docs/issues) 或 [Pull Request](https://github.com/OpenListTeam/OpenList-Docs/pulls) 提交。
 :::
 
 ### [sbwml/luci-app-openlist ↗](https://github.com/sbwml/luci-app-openlist)
@@ -195,6 +199,8 @@ Free and Open Source Software licensed under the GPLv2 License.
 
 自由开源软件，GPLv2 协议
 :::
+
+---
 
 ### [huancun/Openlist-EX-container ↗](https://github.com/huancun/Openlist-EX-container)
 
