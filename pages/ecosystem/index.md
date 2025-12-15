@@ -220,16 +220,16 @@ Free and Open Source Software licensed under the GPLv3 license.
 
 ---
 
-### [hienao/openlist-strm ↗](https://github.com/hienao/openlist-strm)
+### [hienao/ostrm ↗](https://github.com/hienao/ostrm)
 
 ::: en
-A full-stack application for converting OpenList file lists into STRM streaming media files.
+A full-stack application for converting OpenList file lists into STRM streaming media files. (Originally the openlist-strm project)
 
 Free and Open Source Software licensed under the GPLv3 license.
 :::
 
 ::: zh-CN
-一个用于将 OpenList 文件列表转换为 STRM 流媒体文件的全栈应用
+一个用于将 OpenList 文件列表转换为 STRM 流媒体文件的全栈应用（原为 openlist-strm 项目）
 
 自由开源软件，GPLv3协议
 :::
@@ -280,6 +280,22 @@ Free and Open Source Software licensed under the AGPLv3 license.
 QNAP OpenList | OpenList的第三方开源qpkg版本。
 
 自由开源软件，AGPLv3协议
+:::
+
+---
+
+### [HisAtri/openlistapi ↗](https://github.com/HisAtri/openlistapi/)
+
+::: en
+An open-source Python client implementing the OpenList API.
+
+Free and Open Source Software licensed under the MIT license.
+:::
+
+::: zh-CN
+实现了 OpenList API 的 Python 客户端。
+
+自由开源软件，MIT协议
 :::
 
 ## Third-Party Proprietary Software { lang="en" }
